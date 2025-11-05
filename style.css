@@ -1,0 +1,20 @@
+body {
+  font-family: "Cinzel", serif;
+  background: radial-gradient(circle, #0a0a0a, #1e1e1e);
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #555;
+  background: #222;
+  color: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+}
+button:hover {
+  background: #333;
+}
