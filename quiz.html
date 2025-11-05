@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Rite of Alignment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="questions.js"></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <h2 id="question">Loading question...</h2>
+  <div class="buttons">
+    <button onclick="nextQuestion(-1.0)">Strongly Disagree</button>
+    <button onclick="nextQuestion(-0.5)">Disagree</button>
+    <button onclick="nextQuestion(0)">Neutral</button>
+    <button onclick="nextQuestion(0.5)">Agree</button>
+    <button onclick="nextQuestion(1.0)">Strongly Agree</button>
+  </div>
+</body>
+</html>
