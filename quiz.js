@@ -43,7 +43,7 @@ function showQuestion() {
     return;
   }
   const q = questions[qIndex];
-  document.getElementById("question-text").innerText = q.question;
+  document.getElementById("question").innerText = q.question;
 
   const answerDiv = document.getElementById("answers");
   answerDiv.innerHTML = "";
