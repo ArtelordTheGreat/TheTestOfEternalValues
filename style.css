@@ -65,3 +65,12 @@ button:hover {
   font-size: 0.9rem;
   text-shadow: 0 0 3px #000;
 }
+
+#results {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
