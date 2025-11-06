@@ -2,9 +2,12 @@ let qIndex = 0;
 let scores = {};
 
 function initScores() {
-  const first = Object.keys(questions[0].effect);
-  for (let key of first) scores[key] = 0;
+  const axisNames = ["order", "mech", "divine", "rational"];
+  for (let name of axisNames) {
+    scores[name] = 0;
+  }
 }
+
 
 function showQuestion() {
   if (qIndex >= questions.length) {
