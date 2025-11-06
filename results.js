@@ -49,7 +49,6 @@ window.onload = () => {
   }
 
   renderBars(results);
-  showArchetype(results);
 };
 
 const axisColors = {
@@ -67,40 +66,5 @@ function renderBars(results) {
     const gradient = `linear-gradient(to right, ${colors.left} ${percent}%, ${colors.right} ${percent}%)`;
     bar.style.background = gradient;
     bar.style.width = "100%";
-  }
-}
-
-const archetypes = [
-  {
-    name: "The Techno-Druid",
-    image: "images/techno_druid.png",
-    condition: r => r.nature > 60 && r.mech < 40 && r.divine > 40,
-    description: "You are the fusion of machine and moss, a prophet of gears and roots."
-  },
-  {
-    name: "The Divine Engineer",
-    image: "images/divine_engineer.png",
-    condition: r => r.order > 60 && r.divine > 60 && r.mech > 50,
-    description: "You build order into chaos with sanctified precision."
-  },
-  {
-    name: "The Esoteric Rebel",
-    image: "images/esoteric_rebel.png",
-    condition: r => r.chaos > 60 && r.esoteric > 60,
-    description: "You dance on the edge of understanding, a heretic among mortals."
-  }
-];
-
-function showArchetype(results) {
-  const archetypeDiv = document.getElementById("archetype");
-  const found = archetypes.find(a => a.condition(results));
-  if (found) {
-    archetypeDiv.innerHTML = `
-      <div class="archetype">
-        <img src="${found.image}" alt="${found.name}">
-        <h2>${found.name}</h2>
-        <p>${found.description}</p>
-      </div>
-    `;
   }
 }
