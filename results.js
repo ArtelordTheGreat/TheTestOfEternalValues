@@ -47,4 +47,24 @@ window.onload = () => {
 
     container.appendChild(axisDiv);
   }
+
+  renderBars(results);
 };
+
+const axisColors = {
+  chaos: { left: '#ffd700', right: '#4444ff' },      // gold vs blue
+  nature: { left: '#00ff99', right: '#aaaaaa' },     // green vs gray
+  divine: { left: '#ff00ff', right: '#ffff00' },     // magenta vs yellow
+  esoteric: { left: '#6666ff', right: '#00ffff' }    // violet vs cyan
+};
+
+function renderBars(results) {
+  for (let axis in results) {
+    const bar = document.getElementById(`fill-${axis}`);
+    const percent = results[axis];
+    const colors = axisColors[axis] || { left: '#fff', right: '#777' };
+    const gradient = `linear-gradient(to right, ${colors.left} ${percent}%, ${colors.right} ${percent}%)`;
+    bar.style.background = gradient;
+    bar.style.width = "100%";
+  }
+}
