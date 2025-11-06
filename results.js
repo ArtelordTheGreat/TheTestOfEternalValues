@@ -1,14 +1,6 @@
 window.onload = () => {
   const scores = JSON.parse(localStorage.getItem("epicScores"));
 
-  // Define the axes (left label, right label, color)
-  const axes = {
-    order:   { labels: ["Chaos", "Order"],    color: "#ffcc00" },
-    mech:    { labels: ["Nature", "Mechanism"], color: "#66cc66" },
-    divine:  { labels: ["Heretic", "Divine"], color: "#cc66ff" },
-    rational:{ labels: ["Esoteric", "Rational"], color: "#66aaff" }
-  };
-
   const container = document.getElementById("results");
 
   for (let [axis, data] of Object.entries(axes)) {
@@ -52,10 +44,10 @@ window.onload = () => {
 };
 
 const axisColors = {
-  chaos: { left: '#ffd700', right: '#4444ff' },      // gold vs blue
-  nature: { left: '#00ff99', right: '#aaaaaa' },     // green vs gray
-  divine: { left: '#ff00ff', right: '#ffff00' },     // magenta vs yellow
-  esoteric: { left: '#6666ff', right: '#00ffff' }    // violet vs cyan
+  order: { left: '#4444ff', right: '#ffd700' },      // blue vs gold
+  mech: { left: '#aaaaaa', right: '#00ff99' },     // gray vs green
+  divine: { left: '#ffff00', right: '#ff00ff' },     // yellow vs magenta
+  rational: { left: '#00ffff', right: '#6666ff' }    // cyan vs violet
 };
 
 function renderBars(results) {
