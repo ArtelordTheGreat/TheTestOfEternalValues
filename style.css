@@ -5,16 +5,28 @@ body {
   text-align: center;
   padding: 20px;
 }
+.buttons {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;
+  gap: 10px;               /* space between buttons */
+  margin-top: 20px;
+}
+
 button {
-  margin: 5px;
-  padding: 10px 15px;
-  font-size: 1rem;
-  border: 1px solid #555;
+  width: 200px;            /* consistent button width */
+  padding: 12px;
+  border: 1px solid #666;
+  border-radius: 8px;
   background: #222;
   color: #eee;
+  font-family: inherit;
   cursor: pointer;
-  border-radius: 6px;
+  transition: 0.2s;
 }
+
 button:hover {
-  background: #333;
+  background: #444;
+  transform: scale(1.02);
 }
+
