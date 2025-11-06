@@ -1,19 +1,20 @@
 window.onload = () => {
   const scores = JSON.parse(localStorage.getItem("epicScores"));
+
+  const axes = {
+    order: ["Chaos", "Order"],
+    mech: ["Nature", "Mechanism"],
+    divine: ["Heretic", "Divine"],
+    rational: ["Esoteric", "Rational"]
+  };
+
   let output = "";
-  for (let [key, val] of Object.entries(scores)) {
-    output += `${key.toUpperCase()}: ${val}\n`;
+
+  for (let [axis, [left, right]] of Object.entries(axes)) {
+    const val = scores[axis] ?? 0;
+    const percentage = Math.round(((val + 100) / 200) * 100);
+    output += `${left} ${percentage}% ${right}\n`;
   }
+
   document.getElementById("result-text").innerText = output;
 };
-
-function getArchetype(scores) {
-  if (scores.order > scores.chaos && scores.divine > scores.heretic)
-    return "The Celestial Bureaucrat";
-  if (scores.chaos > scores.order && scores.heretic > scores.divine)
-    return "The Laughing Heresiarch";
-  return "The Undefined Wanderer";
-}
-
-document.getElementById("result-text").innerText = 
-  `You are: ${getArchetype(scores)}\n\n` + output;
