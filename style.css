@@ -1,10 +1,3 @@
-body {
-  font-family: "Cinzel", serif;
-  background: radial-gradient(circle, #0a0a0a, #1e1e1e);
-  color: #eee;
-  text-align: center;
-  padding: 20px;
-}
 .buttons {
   display: flex;
   flex-direction: column;  /* stack vertically */
@@ -30,25 +23,11 @@ button:hover {
   transform: scale(1.02);
 }
 
-.axis {
-  margin: 25px auto;
-  width: 80%;
-  max-width: 600px;
-}
-
 .labels {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   margin-bottom: 5px;
-}
-
-.bar {
-  position: relative;
-  height: 24px;
-  background: #333;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .fill {
@@ -73,4 +52,115 @@ button:hover {
 
 @keyframes fadeIn {
   to { opacity: 1; }
+}
+
+/* ======== COSMIC QUIZ UI STYLES ======== */
+
+/* Background — replace image path if you add one */
+body {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Cinzel', serif;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+}
+
+/* Question text */
+.question-text {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Answer buttons */
+.answer-button {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.answer-button:hover {
+  transform: scale(1.05);
+}
+
+.answer-strongly-disagree { background: #d62828; }
+.answer-disagree { background: #f77f00; }
+.answer-neutral { background: #6c757d; }
+.answer-agree { background: #2a9d8f; }
+.answer-strongly-agree { background: #118ab2; }
+
+/* ====== Result Page Bars ====== */
+.axis {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.axis-labels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.bar {
+  width: 100%;
+  height: 22px;
+  border-radius: 11px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 8px;
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.6s ease;
+}
+
+.axis-icon {
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+/* Archetype result */
+.archetype {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.archetype img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 20px #888;
+  margin-bottom: 15px;
+}
+
+.archetype h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.archetype p {
+  font-size: 1em;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
 }
