@@ -22,7 +22,7 @@ function finishQuiz() {
   window.location.href = "results.html";
 }
 
-window.onload = () => {
+window.onload = function() {
   initScores();
   showQuestion();
 };
