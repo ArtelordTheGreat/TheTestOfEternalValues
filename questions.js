@@ -14,5 +14,17 @@ const questions = [
   {
     question: "Instinct is wiser than calculation.",
     effect: { rational: -10 } // -10 = Esoteric, +10 = Rational
+  },
+  {
+    question: "Only through iron discipline we will be able to overcome what's ahead of us.",
+    effect: { order: 10 }
+  },
+  {
+    question: "Science can explain anything in the world if given enough time.",
+    effect: { rational: 10 }
+  },
+  {
+    question: "Flesh is weak, mankind must use more machinary instead.",
+    effect: { mech: 10 }
   }
 ];
