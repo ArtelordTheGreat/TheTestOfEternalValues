@@ -38,11 +38,11 @@ const answers = [
 
 // When displaying a question:
 function showQuestion() {
-  const q = questions[currentQuestion];
-  //if (qIndex >= questions.length) {
-    //finishQuiz();
-    //return;
-  //}
+  if (qIndex >= questions.length) {
+    finishQuiz();
+    return;
+  }
+  const q = questions[qIndex];
   document.getElementById("question-text").innerText = q.question;
 
   const answerDiv = document.getElementById("answers");
