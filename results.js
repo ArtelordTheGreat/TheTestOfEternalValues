@@ -2,7 +2,7 @@ window.onload = () => {
   const scores = JSON.parse(localStorage.getItem("epicScores"));
 
   const container = document.getElementById("results");
-
+/*
   for (let [axis, data] of Object.entries(axes)) {
     const val = scores[axis] ?? 0;
     const pct = Math.round(((val + 100) / 200) * 100);
@@ -38,7 +38,7 @@ window.onload = () => {
     axisDiv.appendChild(bar);
 
     container.appendChild(axisDiv);
-  }
+  }*/
 
   renderBars(results);
 };
