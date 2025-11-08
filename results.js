@@ -1,45 +1,5 @@
 window.onload = () => {
-  const scores = JSON.parse(localStorage.getItem("epicScores"));
-
-  const container = document.getElementById("results");
-/*
-  for (let [axis, data] of Object.entries(axes)) {
-    const val = scores[axis] ?? 0;
-    const pct = Math.round(((val + 100) / 200) * 100);
-
-    // Create axis container
-    const axisDiv = document.createElement("div");
-    axisDiv.className = "axis";
-
-    // Label row
-    const labelRow = document.createElement("div");
-    labelRow.className = "labels";
-    labelRow.innerHTML = `<span>${data.labels[0]}</span><span>${data.labels[1]}</span>`;
-
-    // Bar background
-    const bar = document.createElement("div");
-    bar.className = "bar";
-
-    // Filled part
-    const fill = document.createElement("div");
-    fill.className = "fill";
-    fill.style.width = pct + "%";
-    fill.style.backgroundColor = data.color;
-
-    // Percent text
-    const percent = document.createElement("span");
-    percent.className = "percent";
-    percent.textContent = pct + "%";
-
-    bar.appendChild(fill);
-    bar.appendChild(percent);
-
-    axisDiv.appendChild(labelRow);
-    axisDiv.appendChild(bar);
-
-    container.appendChild(axisDiv);
-  }*/
-
+  const results = JSON.parse(localStorage.getItem("epicScores"));
   renderBars(results);
 };
 
