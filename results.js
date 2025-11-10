@@ -13,7 +13,7 @@ const axisColors = {
 function renderBars(results) {
   for (let axis in results) {
     const bar = document.getElementById(`fill-${axis}`);
-    const percent = results[axis];
+    const percent = 50 + results[axis];
     const colors = axisColors[axis] || { left: '#fff', right: '#777' };
     const gradient = `linear-gradient(to right, ${colors.left} ${percent}%, ${colors.right} ${percent}%)`;
     bar.style.background = gradient;
