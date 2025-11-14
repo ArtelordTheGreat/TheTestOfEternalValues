@@ -54,12 +54,26 @@ button:hover {
   to { opacity: 1; }
 }
 
+@media (max-width: 600px) {
+  .axis-labels {
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .axis-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
 /* ======== COSMIC QUIZ UI STYLES ======== */
 
 /* Background — replace image path if you add one */
 body {
   background: url('images/background.png') no-repeat center center fixed;
   background-size: cover;
+  background-color: #000; /* fallback */
   font-family: 'Cinzel', serif;
   color: #fff;
   margin: 0;
@@ -107,60 +121,51 @@ body::before {
 
 /* ====== Result Page Bars ====== */
 .axis {
-  margin: 30px auto;
-  width: 80%;
+  margin-bottom: 35px;
 }
 
 .axis-labels {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 1.1em;
+  color: #fff;
+}
+
+.axis-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.axis-icon {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+.axis-percent {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.bar-container {
+  width: 100%;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .bar {
-  width: 100%;
-  height: 22px;
-  border-radius: 11px;
-  overflow: hidden;
-  position: relative;
-  margin-top: 8px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.6s ease;
 }
 
 .bar-fill {
   height: 100%;
   transition: width 0.6s ease;
-}
-
-.axis-icon {
-  height: 28px;
-  vertical-align: middle;
-  margin: 0 5px;
-}
-
-/* Archetype result */
-.archetype {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.archetype img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 0 0 20px #888;
-  margin-bottom: 15px;
-}
-
-.archetype h2 {
-  font-size: 1.6em;
-  margin-bottom: 10px;
-}
-
-.archetype p {
-  font-size: 1em;
-  color: #ddd;
-  max-width: 600px;
-  margin: 0 auto;
 }
