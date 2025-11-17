@@ -44,47 +44,38 @@ function renderBars(results) {
   const container = document.getElementById("results");
   container.innerHTML = "";
 
-  for (const [axis, value] of Object.entries(results)) {
-    const axisData = axisLabels[axis]; // assuming you have axisLabels defined
-    const leftVal = Math.round(value);
-    const rightVal = 100 - leftVal;
+  for (const axis in results) {
+    const score = results[axis]; // -100 to +100
+    const config = axisLabels[axis];
+    const colors = axisColors[axis];
 
-    const axisDiv = document.createElement("div");
-    axisDiv.className = "axis";
+    // Convert to two 0–100 percentages
+    const leftPercent  = Math.round((100 - score) / 2);
+    const rightPercent = Math.round((100 + score) / 2);
 
-    // Row with icons, names, and percentages
-    const labelRow = document.createElement("div");
-    labelRow.className = "axis-labels";
+    // Create row
+    const row = document.createElement("div");
+    row.className = "axis-row";
 
-    labelRow.innerHTML = `
-      <div class="axis-side left">
-        <img src="images/${axisData.leftIcon}" class="axis-icon">
-        <span>${axisData.leftLabel}</span>
-        <span class="axis-percent">${leftVal}%</span>
+    // Icons + labels
+    row.innerHTML = `
+      <div class="axis-left">
+        <img src="images/${config.leftIcon}" class="axis-icon">
+        <span>${config.leftLabel} ${leftPercent}%</span>
       </div>
-      <div class="axis-side right">
-        <span class="axis-percent">${rightVal}%</span>
-        <span>${axisData.rightLabel}</span>
-        <img src="images/${axisData.rightIcon}" class="axis-icon">
+
+      <div class="axis-bar">
+        <div class="bar-left"  style="width:${leftPercent}%; background:${colors.left};"></div>
+        <div class="bar-right" style="width:${rightPercent}%; background:${colors.right};"></div>
+      </div>
+
+      <div class="axis-right">
+        <span>${rightPercent}% ${config.rightLabel}</span>
+        <img src="images/${config.rightIcon}" class="axis-icon">
       </div>
     `;
 
-    // Bar showing proportion
-    const barContainer = document.createElement("div");
-    barContainer.className = "bar-container";
-
-    const bar = document.createElement("div");
-    bar.className = "bar";
-    bar.style.width = `${leftVal}%`;
-
-    const colors = axisColors[axis] || { left: "#888", right: "#555" };
-    const gradient = `linear-gradient(to right, ${colors.left}, ${colors.right})`;
-    bar.style.background = gradient;
-
-    barContainer.appendChild(bar);
-    axisDiv.appendChild(labelRow);
-    axisDiv.appendChild(barContainer);
-    container.appendChild(axisDiv);
+    container.appendChild(row);
   }
 }
 
