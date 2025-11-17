@@ -140,12 +140,6 @@ body::before {
   gap: 8px;
 }
 
-.axis-icon {
-  width: 36px;
-  height: 36px;
-  vertical-align: middle;
-}
-
 .axis-percent {
   font-size: 16px;
   opacity: 0.8;
@@ -168,4 +162,47 @@ body::before {
 .bar-fill {
   height: 100%;
   transition: width 0.6s ease;
+}
+
+//new version
+.axis-row {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.axis-left, .axis-right {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.axis-left {
+  justify-content: flex-start;
+}
+
+.axis-right {
+  justify-content: flex-end;
+}
+
+.axis-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.axis-bar {
+  width: 70%;
+  height: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.bar-left, .bar-right {
+  height: 100%;
 }
