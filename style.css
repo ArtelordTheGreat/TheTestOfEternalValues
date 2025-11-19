@@ -172,15 +172,15 @@ body::before {
 
 .axis-row {
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
 .axis-left, .axis-right {
-  width: 25%;
-  min-width: 120px;
+  width: 20%;
+  min-width: 130px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -204,7 +204,7 @@ body::before {
 
 .axis-bar {
   width: 70%;
-  height: 20px;
+  height: 30px;
   background: rgba(255,255,255,0.1);
   border-radius: 10px;
   overflow: hidden;
