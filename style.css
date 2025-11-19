@@ -113,11 +113,11 @@ body::before {
   transform: scale(1.05);
 }
 
-.answer-strongly-disagree { background: #d62828; }
-.answer-disagree { background: #f77f00; }
-.answer-neutral { background: #6c757d; }
-.answer-agree { background: #2a9d8f; }
-.answer-strongly-agree { background: #118ab2; }
+.answer-strongly-disagree { background: #c80000; }
+.answer-disagree { background: #9b5340; }
+.answer-neutral { background: #828282; }
+.answer-agree { background: #78b569; }
+.answer-strongly-agree { background: #00c100; }
 
 /* ====== Result Page Bars ====== */
 .axis {
