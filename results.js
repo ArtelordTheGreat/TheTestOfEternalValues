@@ -32,7 +32,7 @@ window.onload = () => {
   const results = JSON.parse(localStorage.getItem("epicScores"));
   renderBars(results);
   
-  const best = getClosestArchetype(scores);
+  const best = getClosestArchetype(results);
   document.getElementById("closest-match").innerText =
     "Closest Archetype: " + best.name;
 };
