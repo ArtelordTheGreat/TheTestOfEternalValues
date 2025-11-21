@@ -31,6 +31,10 @@ const axisLabels = {
 window.onload = () => {
   const results = JSON.parse(localStorage.getItem("epicScores"));
   renderBars(results);
+  
+  const best = getClosestArchetype(scores);
+  document.getElementById("closest-match").innerText =
+    "Closest Archetype: " + best.name;
 };
 
 const axisColors = {
@@ -79,3 +83,25 @@ function renderBars(results) {
   }
 }
 
+function distance(a, b) {
+  let sum = 0;
+  for (let axis in a) {
+    sum += Math.pow(a[axis] - b[axis], 2);
+  }
+  return Math.sqrt(sum);
+}
+
+function getClosestArchetype(scores) {
+  let best = null;
+  let bestDistance = Infinity;
+  
+  archetypes.forEach(arch => {
+    const d = distance(scores, arch.stats);
+    if (d < bestDistance) {
+      bestDistance = d;
+      best = arch;
+    }
+  });
+
+  return best;
+}
