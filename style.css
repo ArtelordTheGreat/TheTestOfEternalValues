@@ -179,7 +179,7 @@ body::before {
 }
 
 .axis-left, .axis-right {
-  width: 30%;
+  width: 27%;
   min-width: 160px;
   display: flex;
   align-items: center;
@@ -203,7 +203,7 @@ body::before {
 }
 
 .axis-bar {
-  width: 60%;
+  width: 63%;
   height: 30px;
   background: rgba(255,255,255,0.1);
   border-radius: 10px;
