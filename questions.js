@@ -1,4 +1,4 @@
-const questions = [
+let questions = [
   {
     question: "Only through structure can the universe sing in harmony.",
     effect: { order: 10 } // +10 = Order, -10 = Chaos
