@@ -33,8 +33,11 @@ window.onload = () => {
   renderBars(results);
   
   const best = getClosestArchetype(results);
-  document.getElementById("closest-match").innerText =
-    "Closest Archetype: " + best.name;
+  document.getElementById("closest-match").innerHTML = `
+  <h2>${best.name}</h2>
+  <p>${best.description}</p>
+`;
+
 };
 
 const axisColors = {
