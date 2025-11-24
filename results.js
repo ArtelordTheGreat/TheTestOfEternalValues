@@ -54,8 +54,8 @@ function renderBars(results) {
     const colors = axisColors[axis];
 
     // Convert to two 0–100 percentages
-    const leftPercent  = Math.round((100 - score) / 2);
-    const rightPercent = Math.round((100 + score) / 2);
+    const leftPercent  = Math.round((100 + score) / 2);
+    const rightPercent = Math.round((100 - score) / 2);
 
     // Create row
     const row = document.createElement("div");
