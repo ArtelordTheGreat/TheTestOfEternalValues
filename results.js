@@ -24,6 +24,42 @@ const axisLabels = {
     rightLabel: "Esoteric",
     leftIcon: "rational.png",
     rightIcon: "esoteric.png"
+  },
+  violence: {
+    leftLabel: "Violence",
+    rightLabel: "Mercy",
+    leftIcon: "violence.png",
+    rightIcon: "mercy.png"
+  },
+  evolution: {
+    leftLabel: "Evolution",
+    rightLabel: "Stasis",
+    leftIcon: "evolution.png",
+    rightIcon: "stasis.png"
+  },
+  creation: {
+    leftLabel: "Creation",
+    rightLabel: "Erosion",
+    leftIcon: "creation.png",
+    rightIcon: "erosion.png"
+  },
+  reality: {
+    leftLabel: "Reality",
+    rightLabel: "Delirium",
+    leftIcon: "reality.png",
+    rightIcon: "delirium.png"
+  },
+  might: {
+    leftLabel: "Might",
+    rightLabel: "Intellect",
+    leftIcon: "might.png",
+    rightIcon: "intellect.png"
+  },
+  spread: {
+    leftLabel: "Spread",
+    rightLabel: "Preserve",
+    leftIcon: "spread.png",
+    rightIcon: "preserve.png"
   }
 };
 
@@ -41,10 +77,16 @@ window.onload = () => {
 };
 
 const axisColors = {
-  order: { left: "#8a2be2", right: "#ffcc00" },      // blue vs gold
-  mech: { left: "#aaaaaa", right: "#00ff88" },     // gray vs green
-  divine: { left: "#ffff33", right: "#ff33ff" },     // yellow vs magenta
-  rational: { left: "#00ffff", right: "#8000ff" }    // cyan vs violet
+  order: { left: "#6100ff", right: "#ff5900" },      
+  mech: { left: "#898989", right: "#00bd00" },     
+  divine: { left: "#fffe00", right: "#ff00ab" },     
+  rational: { left: "#b3ff00", right: "#8600ff" },     
+  violence: { left: "#ff0000", right: "#ff00ff" },     
+  evolution: { left: "#74ff00", right: "#00b5ff" },     
+  creation: { left: "#ffcf00", right: "#ff0053" },     
+  reality: { left: "#00d089", right: "#b000ff" },     
+  might: { left: "#0010ff", right: "#00ffc7" },     
+  spread: { left: "#006eff", right: "#a3ff00" }
 };
 
 function renderBars(results) {
