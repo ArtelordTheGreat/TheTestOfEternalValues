@@ -2,7 +2,7 @@ let qIndex = 0;
 let scores = {};
 
 function initScores() {
-  const axisNames = ["order", "mech", "divine", "rational"];
+  const axisNames = ["order", "mech", "divine", "rational", "violence", "evolution", "creation", "reality", "might", "spread"];
   for (let name of axisNames) {
     scores[name] = 0;
   }
