@@ -11,7 +11,13 @@ const archetypes = [
       order: 80,
       mech: 60,
       divine: 60,
-      rational: 20
+      rational: 20,
+      violence: 80,
+      evolution: -20,
+      creation: -50,
+      reality: 10,
+      might: 60,
+      spread: 80
     }
   },
   {
@@ -26,7 +32,13 @@ const archetypes = [
       order: -30,
       mech: 70,
       divine: 10,
-      rational: -10
+      rational: -10,
+      violence: -50,
+      evolution: 75,
+      creation: 50,
+      reality: 10,
+      might: -60,
+      spread: -20
     }
   },
   {
@@ -41,7 +53,13 @@ const archetypes = [
       order: -40,
       mech: 80,
       divine: -60,
-      rational: 70
+      rational: 70,
+      violence: 0,
+      evolution: 50,
+      creation: 40,
+      reality: 60,
+      might: -80,
+      spread: 0
     }
   },
   {
@@ -56,7 +74,13 @@ const archetypes = [
       order: 10,
       mech: -40,
       divine: 80,
-      rational: -20
+      rational: -20,
+      violence: -40,
+      evolution: 20,
+      creation: 0,
+      reality: -20,
+      might: -80,
+      spread: -100
     }
   },
   {
@@ -71,7 +95,13 @@ const archetypes = [
       order: 0,
       mech: 0,
       divine: 0,
-      rational: 0
+      rational: 0,
+      violence: 0,
+      evolution: 0,
+      creation: 0,
+      reality: 0,
+      might: 0,
+      spread: 0
     }
   },
   {
@@ -86,7 +116,13 @@ const archetypes = [
       order: -90,
       mech: 20,
       divine: -10,
-      rational: 60
+      rational: 60,
+      violence: 75,
+      evolution: 25,
+      creation: -75,
+      reality: 30,
+      might: 20,
+      spread: 0
     }
   },
   {
@@ -101,7 +137,13 @@ const archetypes = [
       order: 90,
       mech: 100,
       divine: 20,
-      rational: 30
+      rational: 30,
+      violence: 60,
+      evolution: -90,
+      creation: 50,
+      reality: 0,
+      might: -80,
+      spread: 75
     }
   }
 ];
