@@ -72,7 +72,7 @@ let questions = [
     effect: { mech: -5 }
   },
   {
-    question: "In harmony and synthesis with nature we will find harmony.",
+    question: "In harmony and synthesis with nature we will find a better life.",
     effect: { mech: -5 }
   },
   {
@@ -158,5 +158,45 @@ let questions = [
   {
     question: "Truth is not universal but subjective and individual.",
     effect: { rational: -5 }
+  },
+  {
+    question: "You won't win any battle if you hold onto non-violence.",
+    effect: { violence: 5 } //violence
+  },
+  {
+    question: "Slaughter is justified if it's done for a good cause.",
+    effect: { violence: 5 }
+  },
+  {
+    question: "In this world you must kill to not be killed.",
+    effect: { violence: 5 }
+  },
+  {
+    question: "To bring a major change to this universe or protect the good, blood has to be spilled.",
+    effect: { violence: 5 }
+  },
+  {
+    question: "If you truly want to achieve something, you must not be afraid to use violence.",
+    effect: { violence: 5 }
+  },
+  {
+    question: "If you're as violent as your opponents are, you are not better than them.",
+    effect: { violence: -5 } //mercy
+  },
+  {
+    question: "Compassion can make people change their alignment and become better.",
+    effect: { violence: -5 }
+  },
+  {
+    question: "A world of eternal peace is possible and this is what we should strive for.",
+    effect: { violence: -5 }
+  },
+  {
+    question: "True victory is obtained not throught slaying enemies but through forgiving them.",
+    effect: { violence: -5 }
+  },
+  {
+    question: "Even the worst ones deserve a chance to change.",
+    effect: { violence: -5 }
   }
 ];
