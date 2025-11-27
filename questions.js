@@ -198,5 +198,205 @@ let questions = [
   {
     question: "Even the worst ones deserve a chance to change.",
     effect: { violence: -5 }
+  },
+  {
+    question: "Nothing in this world is flawless - there is always a place for improvement.",
+    effect: { evolution: 5 } //evolution
+  },
+  {
+    question: "What doesn't change is not alive, life always moves.",
+    effect: { evolution: 5 }
+  },
+  {
+    question: "Life is like riding a bicycle - if you stop, you fall over.",
+    effect: { evolution: 5 }
+  },
+  {
+    question: "The only way to escape decay is to continue the evolution.",
+    effect: { evolution: 5 }
+  },
+  {
+    question: "There can be no Utopia, every system is just another step of the ladder.",
+    effect: { evolution: 5 }
+  },
+  {
+    question: "We must strike for perfection that has nowhere to improve.",
+    effect: { evolution: -5 } //stasis
+  },
+  {
+    question: "Once we're done, the world will be perfect as it is.",
+    effect: { evolution: -5 }
+  },
+  {
+    question: "Once we achieve all our goals, any further change would be adverse.",
+    effect: { evolution: -5 }
+  },
+  {
+    question: "One day all social conflicts and problems will be solved.",
+    effect: { evolution: -5 }
+  },
+  {
+    question: "The process of reforms and revolutions is not eternal, it will end.",
+    effect: { evolution: -5 }
+  },
+  {
+    question: "Problems should be solved by creating something new.",
+    effect: { creation: 5 } //creation
+  },
+  {
+    question: "We must fully focus on construction, not deconstruction.",
+    effect: { creation: 5 }
+  },
+  {
+    question: "The greatest joy that exists is one of creativity.",
+    effect: { creation: 5 }
+  },
+  {
+    question: "The best people in the world are creators.",
+    effect: { creation: 5 }
+  },
+  {
+    question: "The greatest act that there can be is bringing something into existance.",
+    effect: { creation: 5 }
+  },
+  {
+    question: "In order to achieve anything, the surrent state of things must be abolished.",
+    effect: { creation: -5 } //erosion
+  },
+  {
+    question: "Destruction leads the way, the burning fire illuminates it.",
+    effect: { creation: -5 }
+  },
+  {
+    question: "To solve main problems, we must attempt to destroy what exists.",
+    effect: { creation: -5 }
+  },
+  {
+    question: "What we live in must be shredded into pieces.",
+    effect: { creation: -5 }
+  },
+  {
+    question: "Being very destructive is a fine part of our nature.",
+    effect: { creation: -5 }
+  },
+  {
+    question: "There is no other dimension beyond the one we're living in.",
+    effect: { reality: 5 } //reality
+  },
+  {
+    question: "We must fully focus on the world we're living in, not on dreams or fiction.",
+    effect: { reality: 5 }
+  },
+  {
+    question: "The material seen world is our domain, none other is.",
+    effect: { reality: 5 }
+  },
+  {
+    question: "Thoughts are no use if they don't lead to actions in the real world.",
+    effect: { reality: 5 }
+  },
+  {
+    question: "Idealisation of certain aspects of the world is dangerous or useless.",
+    effect: { reality: 5 }
+  },
+  {
+    question: "Dreams are a powerful tools that can unlock the power of the unconscious mind.",
+    effect: { reality: -5 } //delirium
+  },
+  {
+    question: "Metaphysics are real and worth exploring deeper.",
+    effect: { reality: -5 }
+  },
+  {
+    question: "It is possible to go beyond physical limits.",
+    effect: { reality: -5 }
+  },
+  {
+    question: "Metaphysics are real and worth exploring deeper.",
+    effect: { reality: -5 }
+  },
+  {
+    question: "A renewed cultural imagination could achieve moments of rupture and sunbursts.",
+    effect: { reality: -5 }
+  },
+  {
+    question: "Might makes right.",
+    effect: { might: 5 } //might
+  },
+  {
+    question: "The world is shaped by those who are the strongest.",
+    effect: { might: 5 }
+  },
+  {
+    question: "If you have strength, you don't need intelligence.",
+    effect: { might: 5 }
+  },
+  {
+    question: "The sword and the hammer are main tools of achieving our goals.",
+    effect: { might: 5 }
+  },
+  {
+    question: "Fighters and warriors are most honorable roles, better than civilians.",
+    effect: { might: 5 }
+  },
+  {
+    question: "The world is shaped by those who are the smartest.",
+    effect: { might: -5 } //intellect
+  },
+  {
+    question: "Knowledge is power.",
+    effect: { might: -5 }
+  },
+  {
+    question: "If you know how the world is structured, than you can make big changes even with little effort.",
+    effect: { might: -5 }
+  },
+  {
+    question: "The smartest ones must inherit the Earth.",
+    effect: { might: -5 }
+  },
+  {
+    question: "The world is shaped by those who have intelligence.",
+    effect: { might: -5 }
+  },
+  {
+    question: "It is our duty to liberate others all across the world.",
+    effect: { spread: 5 } //spread
+  },
+  {
+    question: "We must care of citizens abroad as much as of our own.",
+    effect: { spread: 5 }
+  },
+  {
+    question: "Interventions in other countries are justified even if they have high costs.",
+    effect: { spread: 5 }
+  },
+  {
+    question: "We must fight for our values across the entire world, not just our home.",
+    effect: { spread: 5 }
+  },
+  {
+    question: "We can rest only once we have spread our ideas across the Universe.",
+    effect: { spread: 5 }
+  },
+  {
+    question: "It is never important what happens abroad unless it touches us.",
+    effect: { spread: -5 } //preserve
+  },
+  {
+    question: "It's better to keep what we already have than to try to expand.",
+    effect: { spread: -5 }
+  },
+  {
+    question: "If there is too much injustice around your home, just build walls to not see it.",
+    effect: { spread: -5 }
+  },
+  {
+    question: "We must care about ourselves first of all, not about geopolitical neighbours.",
+    effect: { spread: -5 }
+  },
+  {
+    question: "The best solution would be to isolate our home from the outside.",
+    effect: { spread: -5 }
   }
 ];
