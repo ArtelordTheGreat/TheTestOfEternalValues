@@ -90,51 +90,79 @@ const axisColors = {
 };
 
 function renderBars(results) {
-  const container = document.getElementById("results");
-  container.innerHTML = "";
+    const container = document.getElementById("results");
+    container.innerHTML = "";
 
-  for (const axis in results) {
-    const score = results[axis]; // -100 to +100
-    const config = axisLabels[axis];
-    const colors = axisColors[axis];
+    Object.keys(results).forEach(axis => {
+        const value = results[axis];          // -100 .. 100
+        const leftPercent = (100 + value) / 2;
+        const rightPercent = (100 - value) / 2;
 
-    // Convert to two 0–100 percentages
-    const leftPercent  = Math.round((100 + score) / 2);
-    const rightPercent = Math.round((100 - score) / 2);
+        const labels = axisLabels[axis];      // { leftLabel, rightLabel, leftIcon, rightIcon }
 
-    // Create row
-    const row = document.createElement("div");
-    row.className = "axis-row";
+        // AXIS WRAPPER
+        const axisDiv = document.createElement("div");
+        axisDiv.classList.add("axis");
 
-    // Icons + labels
-    row.innerHTML = `
-      <div class="axis-left">
-        <img src="images/${config.leftIcon}" class="axis-icon">
-        <span>${config.leftLabel} ${leftPercent}%</span>
-      </div>
+        // HEADER
+        const header = document.createElement("div");
+        header.classList.add("axis-header");
 
-      <div class="axis-bar">
-        <div class="bar-left"  style="width:${leftPercent}%; background:${colors.left};"></div>
-        <div class="bar-right" style="width:${rightPercent}%; background:${colors.right};"></div>
-      </div>
+        const leftIcon = document.createElement("img");
+        leftIcon.classList.add("axis-icon");
+        leftIcon.src = `images/${labels.leftIcon}`;
 
-      <div class="axis-right">
-        <span>${rightPercent}% ${config.rightLabel}</span>
-        <img src="images/${config.rightIcon}" class="axis-icon">
-      </div>
-    `;
+        const title = document.createElement("div");
+        title.classList.add("axis-title");
+        title.textContent = axis;
 
-    container.appendChild(row);
-  }
+        const rightIcon = document.createElement("img");
+        rightIcon.classList.add("axis-icon");
+        rightIcon.src = `images/${labels.rightIcon}`;
+
+        header.appendChild(leftIcon);
+        header.appendChild(title);
+        header.appendChild(rightIcon);
+
+        // PERCENTAGES
+        const percentRow = document.createElement("div");
+        percentRow.classList.add("axis-percentages");
+
+        const leftP = document.createElement("span");
+        leftP.classList.add("left-percent");
+        leftP.textContent = `${Math.round(leftPercent)}% ${labels.leftLabel}`;
+
+        const rightP = document.createElement("span");
+        rightP.classList.add("right-percent");
+        rightP.textContent = `${labels.rightLabel} ${Math.round(rightPercent)}%`;
+
+        percentRow.appendChild(leftP);
+        percentRow.appendChild(rightP);
+
+        // BAR
+        const barWrapper = document.createElement("div");
+        barWrapper.classList.add("axis-bar");
+
+        const leftBar = document.createElement("div");
+        leftBar.classList.add("bar-left");
+        leftBar.style.width = `${leftPercent}%`;
+
+        const rightBar = document.createElement("div");
+        rightBar.classList.add("bar-right");
+        rightBar.style.width = `${rightPercent}%`;
+
+        barWrapper.appendChild(leftBar);
+        barWrapper.appendChild(rightBar);
+
+        // BUILD AXIS
+        axisDiv.appendChild(header);
+        axisDiv.appendChild(percentRow);
+        axisDiv.appendChild(barWrapper);
+
+        container.appendChild(axisDiv);
+    });
 }
 
-function distance(a, b) {
-  let sum = 0;
-  for (let axis in a) {
-    sum += Math.pow(a[axis] - b[axis], 2);
-  }
-  return Math.sqrt(sum);
-}
 
 function getClosestArchetype(scores) {
   let best = null;
