@@ -178,3 +178,11 @@ function getClosestArchetype(scores) {
 
   return best;
 }
+
+function distance(a, b) {
+  let sum = 0;
+  for (let axis in a) {
+    sum += Math.pow(a[axis] - b[axis], 2);
+  }
+  return Math.sqrt(sum);
+}
