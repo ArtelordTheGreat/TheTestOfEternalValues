@@ -107,6 +107,10 @@ body::before {
 .answer-strongly-agree { background: #00b800; }
 
 /* ====== Result Page Bars ====== */
+.axis {
+  margin-bottom: 35px;
+}
+
 .axis-labels {
   display: flex;
   justify-content: space-between;
@@ -180,6 +184,25 @@ body::before {
   text-align: right;
 }
 
+.axis-icon {
+  height: 64px;
+  width: 64px;
+}
+
+.axis-bar {
+  width: 63%;
+  height: 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.bar-left, .bar-right {
+  height: 100%;
+}
+
 .closest-match {
   margin-top: 50px;
   font-size: 20px;
@@ -191,166 +214,54 @@ body::before {
   line-height: 1.4em;
 }
 
-/* ========= BASE LAYOUT ========= */
-
-.axis {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 18px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-}
-
-/* Header with icon + name */
-.axis-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 6px;
-}
-
-.axis-icon {
-    width: 52px;
-    height: 52px;
-}
-
-.axis-title {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-/* Percentages above bar */
-.axis-percentages {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    margin-bottom: 4px;
-}
-
-.left-percent {
-    color: #00cfff;
-}
-
-.right-percent {
-    color: #ff8eb3;
-}
-
-/* Bars */
-.axis-bar {
-    width: 100%;
-    height: 28px;
-    display: flex;
-    overflow: hidden;
-    border-radius: 6px;
-    background: rgba(255,255,255,0.15);
-}
-
-.bar-left, .bar-right {
-    height: 100%;
-}
-
-.bar-left {
-    background: #5fa9ff;
-}
-
-.bar-right {
-    background: #ff59c7;
-}
-
-/* ========= DESKTOP OPTIMIZATION ========= */
-
-@media (min-width: 769px) {
-    .axis-header {
-        flex-direction: row;
+/* ========== MOBILE PORTRAIT FIX ========== */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
     }
 
-    .axis-title {
+    .axis-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 6px;
+    }
+
+    .axis-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .axis-label-left,
+    .axis-label-right {
+        font-size: 16px;
+    }
+
+    .axis-row .percentage {
+        font-size: 14px;
+    }
+
+    .bar-container {
+        width: 100%;
+        height: 22px; /* Slightly smaller bar */
+    }
+
+    .bar-fill-left,
+    .bar-fill-right {
+        height: 22px;
+    }
+
+    h1 {
         font-size: 26px;
     }
 
-    .axis-percentages {
-        font-size: 18px;
-    }
-
-    .axis-icon {
-        width: 56px;
-        height: 56px;
-    }
-}
-
-/* ========= MOBILE REDESIGN ========= */
-
-@media (max-width: 768px) {
-
-    body {
-        padding: 6px;
-    }
-
-    .axis {
-        margin: 18px 0;
-        padding-bottom: 6px;
-    }
-
-    /* Stack icon above title */
-    .axis-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 6px;
-        margin-bottom: 8px;
-    }
-
-    .axis-title {
-        font-size: 20px;
-    }
-
-    .axis-icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .axis-percentages {
-        font-size: 16px;
-        padding: 0 6px;
-    }
-
-    .axis-bar {
-        height: 22px;
-        border-radius: 4px;
-    }
-
     #archetype-name {
-        font-size: 24px;
-        margin-top: 24px;
-        text-align: center;
+        font-size: 22px;
+        margin-top: 20px;
     }
 
     #archetype-description {
         font-size: 16px;
-        padding: 0 8px;
-        line-height: 1.45;
-        text-align: center;
-    }
-}
-
-/* ========= ULTRA-SMALL SCREENS (phones < 360px) ========= */
-
-@media (max-width: 360px) {
-
-    .axis-icon {
-        width: 36px;
-        height: 36px;
-    }
-
-    .axis-title {
-        font-size: 18px;
-    }
-
-    .axis-percentages {
-        font-size: 14px;
-    }
-
-    .axis-bar {
-        height: 20px;
+        padding: 0 6px;
     }
 }
