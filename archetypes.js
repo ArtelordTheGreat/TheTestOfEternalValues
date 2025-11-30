@@ -145,5 +145,26 @@ const archetypes = [
       might: -80,
       spread: 75
     }
+  },
+  {
+    name: "Emperor of Sun",
+    description: `
+      You are the One to lead many, the One to bring the Light into this world.  
+      Armies of enlightened soldiers and paladins fight by your command in battles with the cursed and the damned.  
+      You are the definition of divine and order, the Sun shines above you as above the Chosen One.  
+      You are God of an empire, of the Imperium of Man, ready to purge any bandits, dissidents or heretics.
+    `,
+    stats: {
+      order: 100,
+      mech: 50,
+      divine: 100,
+      rational: 0,
+      violence: 60,
+      evolution: -90,
+      creation: 50,
+      reality: 40,
+      might: 10,
+      spread: 100
+    }
   }
 ];
