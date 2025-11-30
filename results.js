@@ -108,18 +108,22 @@ function renderBars(results) {
 
     // Icons + labels
     row.innerHTML = `
-      <div class="axis-left">
+      <div class="axis-icon-div">
         <img src="images/${config.leftIcon}" class="axis-icon">
-        <span>${config.leftLabel} ${leftPercent}%</span>
       </div>
-
-      <div class="axis-bar">
-        <div class="bar-left"  style="width:${leftPercent}%; background:${colors.left};"></div>
-        <div class="bar-right" style="width:${rightPercent}%; background:${colors.right};"></div>
+      
+      <div class="axis-body">
+        <div class="axis-labels">
+          <span class="axis-label-left">${config.leftLabel} ${leftPercent}%</span>
+          <span class="axis-label-right">${rightPercent}% ${config.rightLabel}</span>
+        </div>
+        <div class="axis-bar">
+          <div class="bar-left"  style="width:${leftPercent}%; background:${colors.left};"></div>
+          <div class="bar-right" style="width:${rightPercent}%; background:${colors.right};"></div>
+        </div>
       </div>
-
-      <div class="axis-right">
-        <span>${rightPercent}% ${config.rightLabel}</span>
+      
+      <div class="axis-icon-div">
         <img src="images/${config.rightIcon}" class="axis-icon">
       </div>
     `;
