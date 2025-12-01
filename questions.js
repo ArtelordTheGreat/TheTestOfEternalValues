@@ -8,11 +8,11 @@ let questions = [
     effect: { order: 5 }
   },
   {
-    question: "In order there is strength, it is what gives both power and peace.",
+    question: "Without unbroken structure, even the most beautiful creation is nothing but drifting ash.",
     effect: { order: 5 }
   },
   {
-    question: "Strict rules must be set in place and be followed.",
+    question: "A world ruled by rigid laws and circuit-straight lines is superior to one born from roaring storms and unpredictable tides.",
     effect: { order: 5 }
   },
   {
@@ -20,7 +20,7 @@ let questions = [
     effect: { order: 5 }
   },
   {
-    question: "It is better to act not according to plans, but to momentary impulses that push you.",
+    question: "Society built on chaos, free-formed and wild, better reflects the true nature of reality than any carved statute.",
     effect: { order: -5 } //chaos
   },
   {
@@ -44,15 +44,15 @@ let questions = [
     effect: { mech: 5 } //mechanism
   },
   {
-    question: "If we want to become immortal or to live longer, we have embrace transhumanism.",
+    question: "If we want to become immortal or to live longer, we have to embrace transhumanism.",
     effect: { mech: 5 }
   },
   {
-    question: "It is a good thing if the mankind keeps on replacing everything with machines.",
+    question: "Gears, pistons and metal contraptions are the highest expression of progress; nature is overrated sentimental fluff.",
     effect: { mech: 5 }
   },
   {
-    question: "Artificial constructs are trustworthy and better tools of mankind.",
+    question: "It is nobler to build a city of shining steel than to kneel and plant seeds in crumbling soil.",
     effect: { mech: 5 }
   },
   {
@@ -68,7 +68,7 @@ let questions = [
     effect: { mech: -5 }
   },
   {
-    question: "Plants and animals are our relatives - they also should have rights.",
+    question: "Wild forests, rivers and living soil embody truths machines can never reach.",
     effect: { mech: -5 }
   },
   {
@@ -92,7 +92,7 @@ let questions = [
     effect: { divine: 5 }
   },
   {
-    question: "One who serves the greater good becomes a good person.",
+    question: "True power flows from sacred skies and divine decree, not human will.",
     effect: { divine: 5 }
   },
   {
@@ -104,11 +104,11 @@ let questions = [
     effect: { divine: -5 } //heretic
   },
   {
-    question: "Heretics are not wrongful - they're challenging oppressors.",
+    question: "Heretics are not wrongful — they are challengers of oppressors.",
     effect: { divine: -5 }
   },
   {
-    question: "Power comes to those who dare to challenge morals.",
+    question: "We must reject all divine superstition — heresy is the first step toward true enlightenment.",
     effect: { divine: -5 }
   },
   {
@@ -116,7 +116,7 @@ let questions = [
     effect: { divine: -5 }
   },
   {
-    question: "Sins are our strikes to be what we want to be and rightful acts.",
+    question: "Questioning the divine is the highest act of faith in one’s own nature.",
     effect: { divine: -5 }
   },
   {
@@ -128,7 +128,7 @@ let questions = [
     effect: { rational: 5 }
   },
   {
-    question: "To achieve anything we must stay rational when making decisions.",
+    question: "Better to rule one’s mind with iron will than wander lost through dreams.",
     effect: { rational: 5 }
   },
   {
@@ -136,7 +136,7 @@ let questions = [
     effect: { rational: 5 }
   },
   {
-    question: "We should not trust what cannot be explained logically.",
+    question: "Pure logic, mathematics and reason are the only trustworthy guides; all mystic babble is foolishness.",
     effect: { rational: 5 }
   },
   {
@@ -148,7 +148,7 @@ let questions = [
     effect: { rational: -5 }
   },
   {
-    question: "Reason and empirical evidence alone are not enough to explain everything.",
+    question: "Hidden signs, arcane rituals and whispers between worlds hold more truth than any dry calculation.",
     effect: { rational: -5 }
   },
   {
@@ -156,19 +156,19 @@ let questions = [
     effect: { rational: -5 }
   },
   {
-    question: "Truth is not universal but subjective and individual.",
+    question: "An equation may describe a star — but only mysteries can summon its soul.",
     effect: { rational: -5 }
   },
   {
-    question: "You won't win any battle if you hold onto non-violence.",
+    question: "You won't win the war if you hold onto non-violence.",
     effect: { violence: 5 } //violence
   },
   {
-    question: "Slaughter is justified if it's done for a good cause.",
+    question: "Strength and ruthlessness are necessary to carve order from chaos.",
     effect: { violence: 5 }
   },
   {
-    question: "In this world you must kill to not be killed.",
+    question: "The sword that strikes once to stop suffering is kinder than mercy that lets suffering linger.",
     effect: { violence: 5 }
   },
   {
@@ -176,7 +176,7 @@ let questions = [
     effect: { violence: 5 }
   },
   {
-    question: "If you truly want to achieve something, you must not be afraid to use violence.",
+    question: "Mercy is a chain — sometimes the chain must break to let the mighty walk free.",
     effect: { violence: 5 }
   },
   {
@@ -192,7 +192,7 @@ let questions = [
     effect: { violence: -5 }
   },
   {
-    question: "True victory is obtained not throught slaying enemies but through forgiving them.",
+    question: "Mercy even in victory is the sign of a civilized society; violence is for savages.",
     effect: { violence: -5 }
   },
   {
@@ -200,23 +200,23 @@ let questions = [
     effect: { violence: -5 }
   },
   {
-    question: "Nothing in this world is flawless - there is always a place for improvement.",
+    question: "Nothing in this world is flawless — there is always a place for improvement.",
     effect: { evolution: 5 } //evolution
   },
   {
-    question: "What doesn't change is not alive, life always moves.",
+    question: "Change, growth and transformation are the only proofs of life — stagnation is death.",
     effect: { evolution: 5 }
   },
   {
-    question: "Life is like riding a bicycle - if you stop, you fall over.",
+    question: "Life is like riding a bicycle — if you stop, you might as well fall over.",
     effect: { evolution: 5 }
   },
   {
-    question: "The only way to escape decay is to continue the evolution.",
+    question: "The only way to escape decay is to continue the endless evolution.",
     effect: { evolution: 5 }
   },
   {
-    question: "There can be no Utopia, every system is just another step of the ladder.",
+    question: "Let the old gods weep — the different future shall rise.",
     effect: { evolution: 5 }
   },
   {
@@ -224,7 +224,7 @@ let questions = [
     effect: { evolution: -5 } //stasis
   },
   {
-    question: "Once we're done, the world will be perfect as it is.",
+    question: "Preserve traditions, culture, and identity unchanged; evolution leads only to undesirable chaos.",
     effect: { evolution: -5 }
   },
   {
@@ -232,15 +232,15 @@ let questions = [
     effect: { evolution: -5 }
   },
   {
-    question: "One day all social conflicts and problems will be solved.",
+    question: "A stable foundation endures; ceaseless change destroys everything built on the old.",
     effect: { evolution: -5 }
   },
   {
-    question: "The process of reforms and revolutions is not eternal, it will end.",
+    question: "The process of reforms and revolutions is not eternal, it will end no matter what evolutionists say.",
     effect: { evolution: -5 }
   },
   {
-    question: "Problems should be solved by creating something new.",
+    question: "When the world burns, I light the forge — from the ashes, I build anew.",
     effect: { creation: 5 } //creation
   },
   {
@@ -252,11 +252,11 @@ let questions = [
     effect: { creation: 5 }
   },
   {
-    question: "The best people in the world are creators.",
+    question: "I’d rather build soaring monuments and new worlds than watch old ruins crumble to dust.",
     effect: { creation: 5 }
   },
   {
-    question: "The greatest act that there can be is bringing something into existance.",
+    question: "To create from nothing is sacred; to tear down what stands is only for those without visio.",
     effect: { creation: 5 }
   },
   {
@@ -268,11 +268,11 @@ let questions = [
     effect: { creation: -5 }
   },
   {
-    question: "To solve main problems, we must attempt to destroy what exists.",
+    question: "To solve primary problems, we must first destroy what already exists.",
     effect: { creation: -5 }
   },
   {
-    question: "What we live in must be shredded into pieces.",
+    question: "Sometimes decay, collapse, and destruction are purifying — erosion clears the old to make space.",
     effect: { creation: -5 }
   },
   {
@@ -292,11 +292,11 @@ let questions = [
     effect: { reality: 5 }
   },
   {
-    question: "Thoughts are no use if they don't lead to actions in the real world.",
+    question: "I trust waking logic over fevered visions, illusions and hallucinations.",
     effect: { reality: 5 }
   },
   {
-    question: "Idealisation of certain aspects of the world is dangerous or useless.",
+    question: "Cold, concrete reality — with its limits and certainties — is more real than any dreamy fantasy.",
     effect: { reality: 5 }
   },
   {
@@ -312,7 +312,7 @@ let questions = [
     effect: { reality: -5 }
   },
   {
-    question: "Metaphysics are real and worth exploring deeper.",
+    question: "Delirium, dreamscapes and wild visions reveal truths reality dares not show.",
     effect: { reality: -5 }
   },
   {
@@ -332,7 +332,7 @@ let questions = [
     effect: { might: 5 }
   },
   {
-    question: "The sword and the hammer are main tools of achieving our goals.",
+    question: "Raw strength — the power of arms and might — is more reliable than any cunning or intellect.",
     effect: { might: 5 }
   },
   {
@@ -352,15 +352,15 @@ let questions = [
     effect: { might: -5 }
   },
   {
-    question: "The smartest ones must inherit the Earth.",
+    question: "True supremacy is not in muscle or might, but in the mind that wields it.",
     effect: { might: -5 }
   },
   {
-    question: "The world is shaped by those who have intelligence.",
+    question: "Wisdom, strategy and intellect rule over brute force; the brain is stronger than the sword.",
     effect: { might: -5 }
   },
   {
-    question: "It is our duty to liberate others all across the world.",
+    question: "Spread our ideals, culture and power across the world — expansion is the destiny of greatness.",
     effect: { spread: 5 } //spread
   },
   {
@@ -380,7 +380,7 @@ let questions = [
     effect: { spread: 5 }
   },
   {
-    question: "It is never important what happens abroad unless it touches us.",
+    question: "Even if growth and outreach are noble, maintaining purity at home matters more.",
     effect: { spread: -5 } //preserve
   },
   {
@@ -396,7 +396,7 @@ let questions = [
     effect: { spread: -5 }
   },
   {
-    question: "The best solution would be to isolate our home from the outside.",
+    question: "Preserve our traditions, heritage and identity; spreading too far dilutes our soul.",
     effect: { spread: -5 }
   }
 ];
