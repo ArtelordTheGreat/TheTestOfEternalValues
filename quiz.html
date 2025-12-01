@@ -20,7 +20,7 @@
 </button>
 <script>
 document.getElementById("cheat-button").onclick = () => {
-    const scores = [];
+    let scores = {};
     const axisNames = ["order", "mech", "divine", "rational", "violence", "evolution", "creation", "reality", "might", "spread"];
     for (let name of axisNames) {
         scores[name] = Math.floor(Math.random() * 201) - 100;
