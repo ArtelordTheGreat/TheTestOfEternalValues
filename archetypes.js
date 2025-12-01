@@ -166,5 +166,26 @@ const archetypes = [
       might: 10,
       spread: 100
     }
+  },
+  {
+    name: "Mercyful Saint",
+    description: `
+      When all kingdoms plunge into war, chaos and tyrannies, you remind others of why kindness exists.  
+      Many people say that they can almost see a halo around you, and they declare that you must be a saint.  
+      You are able to combine mercy with true divinity, with the heart being always warm and welcoming.  
+      A new hope rises, one about not power or greatness but peace and harmony.
+    `,
+    stats: {
+      order: 0,
+      mech: -10,
+      divine: 100,
+      rational: -10,
+      violence: -100,
+      evolution: 10,
+      creation: 50,
+      reality: 10,
+      might: -50,
+      spread: 50
+    }
   }
 ];
