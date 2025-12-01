@@ -8,16 +8,16 @@ const archetypes = [
       Your sword is as sacred as your oath, and you carry the burden of holiness with grace.
     `,
     stats: {
-      order: 80,
-      mech: 60,
-      divine: 60,
-      rational: 20,
-      violence: 80,
+      order: 60,
+      mech: 40,
+      divine: 100,
+      rational: 00,
+      violence: 100,
       evolution: -20,
-      creation: -50,
+      creation: -75,
       reality: 10,
-      might: 60,
-      spread: 80
+      might: 65,
+      spread: 85
     }
   },
   {
@@ -186,6 +186,27 @@ const archetypes = [
       reality: 10,
       might: -50,
       spread: 50
+    }
+  },
+  {
+    name: "Anarchy Bringer",
+    description: `
+      With a Molotov cocktail in a hand and the Anarchy symbol at cloths, you go across different lands.  
+      All regimes, structures, kingdoms, prisons and castles are reared down by you in flames.  
+      Not just for destruction, but because all hierarchies provide restrictions.  
+      It's the Chaos that liberates — no masters, no kings, no gods, only Anarchy to bring.
+    `,
+    stats: {
+      order: -100,
+      mech: -10,
+      divine: -20,
+      rational: 10,
+      violence: 80,
+      evolution: 15,
+      creation: -50,
+      reality: 25,
+      might: 50,
+      spread: 80
     }
   }
 ];
