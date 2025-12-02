@@ -50,9 +50,9 @@ const archetypes = [
       You provoke the old doctrines and worship progress, forging miracles of metal and mind.
     `,
     stats: {
-      order: -40,
-      mech: 80,
-      divine: -60,
+      order: -50,
+      mech: 85,
+      divine: -75,
       rational: 70,
       violence: 0,
       evolution: 50,
@@ -158,7 +158,7 @@ const archetypes = [
       order: 100,
       mech: 50,
       divine: 100,
-      rational: 0,
+      rational: -20,
       violence: 60,
       evolution: -90,
       creation: 50,
@@ -191,7 +191,7 @@ const archetypes = [
   {
     name: "Anarchy Bringer",
     description: `
-      With a Molotov cocktail in a hand and the Anarchy symbol at cloths, you go across different lands.  
+      With a Molotov cocktail in a hand and the Anarchy symbol on cloths, you go across domains.  
       All regimes, structures, kingdoms, prisons and castles are reared down by you in flames.  
       Not just for destruction, but because all hierarchies provide restrictions.  
       It's the Chaos that liberates — no masters, no kings, no gods, only Anarchy to bring.
@@ -207,6 +207,69 @@ const archetypes = [
       reality: 25,
       might: 50,
       spread: 80
+    }
+  },
+  {
+    name: "Emperor's Comissar",
+    description: `
+      You are a commissar of the Officio Prefectus standing resolute against the enemies of the Emperor of Mankind.  
+      You serve in regiments of the Astra Militarum or aboard ships, commanding and rallying troops. 
+      The duty is maintain the moral of Imperial troops and ratings during military campaigns.  
+      You're empowered with any means necessary to ensure the loyalty and moral purity of charges.
+    `,
+    stats: {
+      order: 85,
+      mech: 60,
+      divine: 85,
+      rational: 0,
+      violence: 75,
+      evolution: -80,
+      creation: 40,
+      reality: 50,
+      might: 15,
+      spread: 85
+    }
+  },
+  {
+    name: "Wilderness Keeper",
+    description: `
+      You are one of druids and rangers who protect nature, whatever form it takes. 
+      Trees, grass, flowers, butterflies, animals — they are all your friends and relatives. 
+      Leaves and winds whisper to you, birds sing at your arrival. 
+      There is no domestication — wilderness is your true ally in this world, and you love it.
+    `,
+    stats: {
+      order: -35,
+      mech: -100,
+      divine: 35,
+      rational: 0,
+      violence: -15,
+      evolution: -50,
+      creation: 35,
+      reality: -20,
+      might: 0,
+      spread: -85
+    }
+  },
+  {
+    name: "Forests Restorator",
+    description: `
+      For too long machines have ruled over the world — now it's time to change balance. 
+      All those fields where trees were chopped down will be covered in green woods again. 
+      You know the Industrial Revolution and it's consequences — now it's time for a counter-revolution. 
+      You fight for Mother Nature against steel and code, and for Her love you must win this.
+    `,
+    stats: {
+      order: -35,
+      mech: -100,
+      divine: 0,
+      rational: -20,
+      violence: 40,
+      evolution: -25,
+      creation: 35,
+      reality: 20,
+      might: 20,
+      spread: 90
     }
   }
 ];
