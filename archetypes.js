@@ -271,5 +271,89 @@ const archetypes = [
       might: 20,
       spread: 90
     }
+  },
+  {
+    name: "C01d G0d's Engineer",
+    description: `
+      Your God, boss and master is a supreme AI, with powers beyond those of any human on this Earth. 
+      You help to create and maintain it — all it's gears and wires, zeros and numbers. 
+      This is the new form of life — a mechanical one, where emotions and feelings have no place. 
+      For the digital world shall be your new world once the time comes and all gears start moving.
+    `,
+    stats: {
+      order: 85,
+      mech: 100,
+      divine: 0,
+      rational: 85,
+      violence: 10,
+      evolution: 50,
+      creation: 75,
+      reality: -10,
+      might: -50,
+      spread: 10
+    }
+  },
+  {
+    name: "Freestyle Creator",
+    description: `
+      Your main tools are a brush to draw and a hammer to build. 
+      Your imagination if fully free and a bit chaotic, yet your greatest joy and goal is creating. 
+      Through painting colors and constructing various peices of art and not only you make the world brighter. 
+      Life itself is a giant playground, even if many have already forgotten. Time to waken fantasy.
+    `,
+    stats: {
+      order: -35,
+      mech: 20,
+      divine: 0,
+      rational: 50,
+      violence: -75,
+      evolution: 80,
+      creation: 100,
+      reality: -40,
+      might: -50,
+      spread: -10
+    }
+  },
+  {
+    name: "Darksome Corruptor",
+    description: `
+      The Darkness itself is speaking through you, as you cross different lands and domains. 
+      Corruption is not something evil — it can be a liberation or a source of ancient power. 
+      Nothing will stay the same, everything will have to change even if they don't want to. 
+      You're a herald of dark times: souls will become dark, the Sun will go glimmer, and space itself will twist.
+    `,
+    stats: {
+      order: -50,
+      mech: -10,
+      divine: -100,
+      rational: -100,
+      violence: 35,
+      evolution: 80,
+      creation: -10,
+      reality: -50,
+      might: 30,
+      spread: 100
+    }
+  },
+  {
+    name: "Igneous Destroyer",
+    description: `
+      You are the apocalypse, you are the fire, you are the flames and the end of the world. 
+      The destruction and fire are your element and nature and the way you live. 
+      Everything what surrounds, the enitre system must be purged and destroyed. 
+      Once you're done, only thing that remains is a tombstone etched with your name.
+    `,
+    stats: {
+      order: -90,
+      mech: -10,
+      divine: -80,
+      rational: 10,
+      violence: 80,
+      evolution: 80,
+      creation: -100,
+      reality: 50,
+      might: 50,
+      spread: 100
+    }
   }
 ];
