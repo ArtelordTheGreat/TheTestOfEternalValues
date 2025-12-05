@@ -76,6 +76,7 @@ body::before {
   width: 260px;
   margin: 14px auto;
   padding: 10px;
+  font-size: 18px;
   border: none;
   border-radius: 10px;
   font-weight: bold;
