@@ -355,5 +355,47 @@ const archetypes = [
       might: 50,
       spread: 100
     }
+  },
+  {
+    name: "Scientific Constructor",
+    description: `
+      Driven by reasons and empirical evidence, you divide illusions from the reality. 
+      Your only source of knowledge is science, the srudy of the real world. 
+      You build hypothesis, prove them and thus build theory for humanity. 
+      Aware of all illusions that humans might have, you create with falliable logic.
+    `,
+    stats: {
+      order: 10,
+      mech: 10,
+      divine: 0,
+      rational: 85,
+      violence: -20,
+      evolution: 70,
+      creation: 85,
+      reality: 85,
+      might: -50,
+      spread: 0
+    }
+  },
+  {
+    name: "Satanic Inquisitor",
+    description: `
+      The King of Hell is your true master and you spread their word with iron might. 
+      With a gun and a sword you curve ways for herecy and infernal entities. 
+      Those servants of light will not stop you will their lies. 
+      In the new Dark Vatican population is terrified, you're the face of dark order.
+    `,
+    stats: {
+      order: 85,
+      mech: 10,
+      divine: -90,
+      rational: -50,
+      violence: 80,
+      evolution: -50,
+      creation: -20,
+      reality: -20,
+      might: 30,
+      spread: 50
+    }
   }
 ];
