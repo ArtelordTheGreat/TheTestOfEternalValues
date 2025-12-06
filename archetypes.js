@@ -265,7 +265,7 @@ const archetypes = [
       divine: 0,
       rational: -20,
       violence: 40,
-      evolution: -25,
+      evolution: 25,
       creation: 35,
       reality: 20,
       might: 20,
@@ -395,6 +395,90 @@ const archetypes = [
       creation: -20,
       reality: -20,
       might: 30,
+      spread: 50
+    }
+  },
+  {
+    name: "Scarlet King",
+    description: `
+      You are made manifest in a form of hatred for modernity, the new, the humanism. 
+      You are the smiling coldness that marks humans' day to day existance. 
+      Forged from a perfect balance of irreconcilable anomalies and humans' breaking minds. 
+      You are the idea of the ancient in a world which discards and fetishes it.
+    `,
+    stats: {
+      order: 50,
+      mech: -20,
+      divine: -100,
+      rational: -85,
+      violence: 85,
+      evolution: -60,
+      creation: -80,
+      reality: -50,
+      might: 60,
+      spread: 80
+    }
+  },
+  {
+    name: "Humanist Heretic",
+    description: `
+      You don't ask for sacrifices or blood, contrasting with the stereotype of a cultist. 
+      Not converted or deceived by some dark cult, you came to your heretic conclusions out of human logic. 
+      You actually care about other lives on this planet — maybe even more than any crusader. 
+      As you sing hymns of life, you travel across worlds: not with a sword, but with a word of wisdom.
+    `,
+    stats: {
+      order: -10,
+      mech: -20,
+      divine: -90,
+      rational: 30,
+      violence: -85,
+      evolution: 60,
+      creation: 10,
+      reality: 20,
+      might: -60,
+      spread: -30
+    }
+  },
+  {
+    name: "Recluse Scholar",
+    description: `
+      Annoyed by the noise of cities and the everyday society, or for any other reason,  
+      you spend your days alone with your researches that would help science.  
+      You carefylly study nature and machines in your laboratories.  
+      Around you there are many papers with formulas and essays, forming a haven.
+    `,
+    stats: {
+      order: -25,
+      mech: 0,
+      divine: 0,
+      rational: 95,
+      violence: -50,
+      evolution: 75,
+      creation: 40,
+      reality: 85,
+      might: -75,
+      spread: -50
+    }
+  },
+  {
+    name: "Krateroctratic Conqueror",
+    description: `
+      "Might is right!" you say, while swinning you glorious sword.  
+      This life was never about intelligence or wisdom, it's about the survival of the fittest.  
+      Philosophers only interpreted the world, so who are they to stop you?  
+      Being the strongest one, you lead a new army, with which a new empire can be formed for your name.
+    `,
+    stats: {
+      order: 80,
+      mech: 0,
+      divine: -20,
+      rational: -10,
+      violence: 100,
+      evolution: 0,
+      creation: -50,
+      reality: 50,
+      might: 100,
       spread: 50
     }
   }
