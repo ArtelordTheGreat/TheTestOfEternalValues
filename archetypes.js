@@ -481,5 +481,110 @@ const archetypes = [
       might: 100,
       spread: 50
     }
+  },
+  {
+    name: "Rational Savage",
+    description: `
+      You apply cold logic to the natural, primal world, free from moralist illusions.   
+      You understand that destruction is an important, if not necessary, step for preservation.
+      Animals are not wrong — they are just who they are, and the world rewards the fittest.
+      And it's not a thing that can, or needs to be, radically changed.
+    `,
+    stats: {
+      order: -20,
+      mech: -85,
+      divine: 0,
+      rational: 85,
+      violence: 45,
+      evolution: -20,
+      creation: -85,
+      reality: 75,
+      might: 40,
+      spread: -60
+    }
+  },
+  {
+    name: "Compassionate Architect",
+    description: `
+      Your main goal is building systems not through rigid control, but by allowing for necessary breakdown. 
+      When the system inevitably fails, you provide relief to those who were abandoned.  
+      Destruction opens a path to something new — a different kind of order.
+      You can, as well, become the new hope when all old worlds begin to shatter.
+    `,
+    stats: {
+      order: 85,
+      mech: 20,
+      divine: 0,
+      rational: 50,
+      violence: -85,
+      evolution: 65,
+      creation: -85,
+      reality: 20,
+      might: -50,
+      spread: 0
+    }
+  },
+  {
+    name: "Mercyful Tide",
+    description: `
+      You are a force that brings erosion and delirium like a flood, yet offers mercy as it recedes. 
+      You are a force that is upholding the natural cycle of destruction and rebirth.  
+      As an avatar of the cycle of life and death, you embrace what others cannot even understand.
+      Are you lost in the Unknown or is the Unknown lost in you? The answer is unclear.
+    `,
+    stats: {
+      order: -50,
+      mech: -20,
+      divine: 0,
+      rational: 0,
+      violence: -80,
+      evolution: 85,
+      creation: -90,
+      reality: -90,
+      might: 0,
+      spread: 50
+    }
+  },
+  {
+    name: "Preserving Delirium",
+    description: `
+      You are the mind operates on the edge of sanity, but your goal is not destruction. 
+      It is the preservation of some truth or relic that only you can perceive.   
+      You maintain it on the verge of unknown, where an ordinary mind can't find logic.
+      The unseen foundation shall not be broken, that's what you know.
+    `,
+    stats: {
+      order: 50,
+      mech: 0,
+      divine: -40,
+      rational: 25,
+      violence: 0,
+      evolution: -85,
+      creation: 0,
+      reality: -100,
+      might: 0,
+      spread: -100
+    }
+  },
+  {
+    name: "The Erodean",
+    description: `
+      This is a title based on mastery of the erosion process. 
+      You understand that time and decay are the ultimate forces of change.    
+      As stone cracks, you seed vines that will then form new patterns.
+      Yet to do that, you manipulate the world into making it shatter.
+    `,
+    stats: {
+      order: 50,
+      mech: -50,
+      divine: 0,
+      rational: 50,
+      violence: -50,
+      evolution: 90,
+      creation: -90,
+      reality: -50,
+      might: 0,
+      spread: 50
+    }
   }
 ];
