@@ -407,13 +407,13 @@ const archetypes = [
       You are the idea of the ancient in a world which discards and fetishes it.
     `,
     stats: {
-      order: 50,
-      mech: -20,
+      order: -100,
+      mech: -50,
       divine: -100,
-      rational: -85,
-      violence: 85,
+      rational: -100,
+      violence: 100,
       evolution: -60,
-      creation: -80,
+      creation: -100,
       reality: -50,
       might: 60,
       spread: 80
@@ -567,24 +567,87 @@ const archetypes = [
     }
   },
   {
-    name: "The Erodean",
+    name: "Grand Inquisitor of Nextness",
     description: `
-      This is a title based on mastery of the erosion process. 
-      You understand that time and decay are the ultimate forces of change.    
-      As stone cracks, you seed vines that will then form new patterns.
-      Yet to do that, you manipulate the world into making it shatter.
+      A title that is internally contradictory, combining the traditional search for heresy with the push for radical change. 
+      You hold zealot-like loyalty to whatever hasn't happened yet. 
+      You preserve the future by actively destroying any vestige of the present. 
+      You ensure the only constant is the frenzied, delirious sprint toward the next, yet-to-be-defined state of being.    
     `,
     stats: {
-      order: 50,
-      mech: -50,
-      divine: 0,
-      rational: 50,
-      violence: -50,
-      evolution: 90,
-      creation: -90,
-      reality: -50,
+      order: 0,
+      mech: 0,
+      divine: -80,
+      rational: -45,
+      violence: -10,
+      evolution: 100,
+      creation: -70,
+      reality: -80,
       might: 0,
-      spread: 50
+      spread: -80
+    }
+  },
+  {
+    name: "Prime Disseminator of Calculated Grace",
+    description: `
+      You believe that true grace and salvation can only be achieved through rigid, repeatable steps. 
+      You create and spread meticulously designed protocols for moral living and self-improvement, 
+      offering mercy only to those who faithfully execute the required steps to rejoin the functional Reality. 
+      You are the one who can turn the world into a calculated machine and make it work.
+    `,
+    stats: {
+      order: 100,
+      mech: 80,
+      divine: 10,
+      rational: 80,
+      violence: -25,
+      evolution: 80,
+      creation: 100,
+      reality: 50,
+      might: 0,
+      spread: 100
+    }
+  },
+  {
+    name: "High Operator of Modulated Kindness",
+    description: `
+      You view mercy not as a feeling, but as a crucial, well-oiled component of a stable society. 
+      You have devised a strict, algorithmic process for forgiveness, charity, and intervention, 
+      ensuring kindness is meted out with maximum impact and zero emotional messiness. 
+      An operator of a machine that forgives out of fully logical conclutions, not intuition.  
+    `,
+    stats: {
+      order: 100,
+      mech: 80,
+      divine: 10,
+      rational: 80,
+      violence: -80,
+      evolution: 80,
+      creation: 50,
+      reality: 60,
+      might: -50,
+      spread: 25
+    }
+  },
+  {
+    name: "Arch-Conservator of Evolving Blasphemy",
+    description: `
+      You meticulously catalog and safeguard every discarded doctrine, not out of reverence, 
+      but to ensure that the original heretical texts are preserved as the foundational sacred texts for the next, inevitably superior, blasphemy. 
+      You goal is not just dissent, but to build an unassailable archive of dissent.
+      Your writings slowly fill up one of the most heretical libraries that there can be.  
+    `,
+    stats: {
+      order: -85,
+      mech: 0,
+      divine: -85,
+      rational: 10,
+      violence: 0,
+      evolution: 85,
+      creation: -10,
+      reality: -10,
+      might: -25,
+      spread: -85
     }
   }
 ];
