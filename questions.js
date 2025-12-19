@@ -4,7 +4,7 @@ let questions = [
     effect: { order: 5 } //order
   },
   {
-    question: "Only through iron discipline we will be able to overcome what's ahead of us.",
+    question: "Only through iron discipline we will be able to overcome what is ahead of us.",
     effect: { order: 5 }
   },
   {
@@ -16,7 +16,7 @@ let questions = [
     effect: { order: 5 }
   },
   {
-    question: "We must throw away personal impulses for the sake of being organised.",
+    question: "Limitation of personal impulses is necessary for us to stay organised.",
     effect: { order: 5 }
   },
   {
@@ -24,27 +24,27 @@ let questions = [
     effect: { order: -5 } //chaos
   },
   {
-    question: "The only way to be free and happy is to don't follow rules that others made.",
+    question: "The only way to be free and happy is to disobey rules that others made and you don't like.",
     effect: { order: -5 }
   },
   {
-    question: "Live by your own pace and desire and then you'll find harmony.",
+    question: "Live by your own pace and desire, that is the best option you have.",
     effect: { order: -5 }
   },
   {
-    question: "This life should be lived through by doing only what you feel like doing.",
+    question: "Satisfy your own ego no matter if that harms the structure around you or not.",
     effect: { order: -5 }
   },
   {
-    question: "Laws keep us restricted - it's better to abolish them and free inner avarity.",
+    question: "Social and legal pyramids that restrict us must be abolished to free inner avarity.",
     effect: { order: -5 }
   },
   {
-    question: "Flesh is weak, mankind must use more steel instead.",
+    question: "Flesh is weak, mankind can progress forward only by becoming steel.",
     effect: { mech: 5 } //mechanism
   },
   {
-    question: "If we want to become immortal or to live longer, we have to embrace transhumanism.",
+    question: "To become immortal or even just to live longer, we have to take transhumanism and its products.",
     effect: { mech: 5 }
   },
   {
@@ -56,7 +56,7 @@ let questions = [
     effect: { mech: 5 }
   },
   {
-    question: "Humanity should forge its own future out of code and metal.",
+    question: "Humanity should forge its own future out of code and metal, concrete and robots.",
     effect: { mech: 5 }
   },
   {
@@ -64,7 +64,7 @@ let questions = [
     effect: { mech: -5 } //nature
   },
   {
-    question: "Humans are children of Mother Nature and we should stay loyal to here.",
+    question: "Humans are children of Mother Nature and we should stay loyal to her.",
     effect: { mech: -5 }
   },
   {
@@ -72,11 +72,11 @@ let questions = [
     effect: { mech: -5 }
   },
   {
-    question: "In harmony and synthesis with nature we will find a better life.",
+    question: "In harmony and synthesis with nature we will find better life.",
     effect: { mech: -5 }
   },
   {
-    question: "The closer a person to trees, grass and animals is, the better his or her life is.",
+    question: "Animals and plants are better friends to us than cold machines.",
     effect: { mech: -5 }
   },
   {
@@ -96,7 +96,7 @@ let questions = [
     effect: { divine: 5 }
   },
   {
-    question: "All saints are people who did something incredible and marvelous.",
+    question: "Saints are people who did something incredible and marvelous.",
     effect: { divine: 5 }
   },
   {
@@ -128,11 +128,11 @@ let questions = [
     effect: { rational: 5 }
   },
   {
-    question: "Better to rule one’s mind with iron will than wander lost through dreams.",
+    question: "Better to rule one’s mind with calculated logic than wander lost through illusions.",
     effect: { rational: 5 }
   },
   {
-    question: "Emotions can drive us off but we must stay with rationality.",
+    question: "Emotions can drive us off and misinform, a rational mind is correct.",
     effect: { rational: 5 }
   },
   {
@@ -144,7 +144,7 @@ let questions = [
     effect: { rational: -5 } //irrational
   },
   {
-    question: "Emotions and faith can also be sources of knowledge.",
+    question: "Emotions and faith can also be sources of true knowledge.",
     effect: { rational: -5 }
   },
   {
@@ -172,7 +172,7 @@ let questions = [
     effect: { violence: 5 }
   },
   {
-    question: "To bring a major change to this universe or protect the good, blood has to be spilled.",
+    question: "To bring a major change to this universe or protect the good, blood must be spilled.",
     effect: { violence: 5 }
   },
   {
@@ -188,7 +188,7 @@ let questions = [
     effect: { violence: -5 }
   },
   {
-    question: "A world of eternal peace is possible and this is what we should strive for.",
+    question: "A world of peace between humans is possible and this is what we should strive for.",
     effect: { violence: -5 }
   },
   {
@@ -196,11 +196,11 @@ let questions = [
     effect: { violence: -5 }
   },
   {
-    question: "Even the worst ones deserve a chance to change.",
+    question: "Even the worst ones deserve a chance to change, better to rehabilitate than execute.",
     effect: { violence: -5 }
   },
   {
-    question: "Nothing in this world is flawless — there is always a place for improvement.",
+    question: "Nothing in this world is flawless — there is always place for improvement.",
     effect: { evolution: 5 } //evolution
   },
   {
@@ -208,7 +208,7 @@ let questions = [
     effect: { evolution: 5 }
   },
   {
-    question: "Life is like riding a bicycle — if you stop, you might as well fall over.",
+    question: "Life is like riding a bicycle — if you stop, you might as well just fall over.",
     effect: { evolution: 5 }
   },
   {
@@ -216,11 +216,11 @@ let questions = [
     effect: { evolution: 5 }
   },
   {
-    question: "Let the old gods weep — the different future shall rise.",
+    question: "Let the old gods weep — the everchanging future shall rise.",
     effect: { evolution: 5 }
   },
   {
-    question: "We must strike for perfection that has nowhere to improve.",
+    question: "The highest goal that there can be is making a perfect stable world.",
     effect: { evolution: -5 } //stasis
   },
   {
@@ -236,7 +236,7 @@ let questions = [
     effect: { evolution: -5 }
   },
   {
-    question: "The process of reforms and revolutions is not eternal, it will end no matter what evolutionists say.",
+    question: "The process of reforms and revolutions is not eternal, it has to come to an end.",
     effect: { evolution: -5 }
   },
   {
@@ -244,7 +244,7 @@ let questions = [
     effect: { creation: 5 } //creation
   },
   {
-    question: "We must fully focus on construction, not deconstruction.",
+    question: "Construction can provide what deconstruction will never achieve.",
     effect: { creation: 5 }
   },
   {
@@ -268,7 +268,7 @@ let questions = [
     effect: { creation: -5 }
   },
   {
-    question: "To solve primary problems, we must first destroy what already exists.",
+    question: "You cannot make this world better unless you destroy its foundation that spreads the evil.",
     effect: { creation: -5 }
   },
   {
@@ -280,7 +280,7 @@ let questions = [
     effect: { creation: -5 }
   },
   {
-    question: "There is no other dimension beyond the one we're living in.",
+    question: "Our world must be seen as one that is fully material and following laws of physics.",
     effect: { reality: 5 } //reality
   },
   {
@@ -288,11 +288,11 @@ let questions = [
     effect: { reality: 5 }
   },
   {
-    question: "The material seen world is our domain, none other is.",
+    question: "Human mind is rooted in matter, all thoughts are electronic impulses in brains.",
     effect: { reality: 5 }
   },
   {
-    question: "I trust waking logic over fevered visions, illusions and hallucinations.",
+    question: "Everything what was confused as magic is either trickery or human imagination.",
     effect: { reality: 5 }
   },
   {
@@ -300,11 +300,11 @@ let questions = [
     effect: { reality: 5 }
   },
   {
-    question: "Dreams are a powerful tools that can unlock the power of the unconscious mind.",
+    question: "Dreams are as real as the material world and they can affect it.",
     effect: { reality: -5 } //delirium
   },
   {
-    question: "Metaphysics are real and worth exploring deeper.",
+    question: "Life isn't limited to physics, we can encounter anomalies and magic.",
     effect: { reality: -5 }
   },
   {
@@ -312,11 +312,11 @@ let questions = [
     effect: { reality: -5 }
   },
   {
-    question: "Delirium, dreamscapes and wild visions reveal truths reality dares not show.",
+    question: "Delirium, dreamscapes and wild visions reveal truths reality dares to not show.",
     effect: { reality: -5 }
   },
   {
-    question: "A renewed cultural imagination could achieve moments of rupture and sunbursts.",
+    question: "Dreams and fantasies, magicians and spirits are real wonders that others just fail to see.",
     effect: { reality: -5 }
   },
   {
@@ -376,7 +376,7 @@ let questions = [
     effect: { spread: 5 }
   },
   {
-    question: "We can rest only once we have spread our ideas across the Universe.",
+    question: "We can rest only once we have spread our ideas across all civilizations.",
     effect: { spread: 5 }
   },
   {
