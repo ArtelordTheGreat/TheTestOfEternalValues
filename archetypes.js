@@ -649,5 +649,68 @@ const archetypes = [
       might: -25,
       spread: -85
     }
+  },
+  {
+    name: "Rebounder of Primal",
+    description: `
+      You one of those who look down at the modern world, at its gears and concrete, and then turn away from it. 
+      A shaman, a warlock or a disappointed scientist, you turned your eyes to old natural and spiritual doctrines. 
+      Not just to guard it, but to bring it back into the world, to shatter and overthrow mechanisms.
+      Steel has no place in your heart, as you stand in the line with those who dare to return the primal.  
+    `,
+    stats: {
+      order: 0,
+      mech: -85,
+      divine: 0,
+      rational: -20,
+      violence: 20,
+      evolution: -85,
+      creation: -85,
+      reality: -85,
+      might: 0,
+      spread: 85
+    }
+  },
+  {
+    name: "Otherworld Researcher",
+    description: `
+      Spirits and phantoms whisper to you, as you aknowledge them and approach with scientific methods. 
+      You know that this world has way more to propose besides what is seen and purely material. 
+      But you also know how to not fall into mystical illusions and stay with a rational mind.
+      You are able to create logic out of illogic, exploring anomalies that go beyond physics.  
+    `,
+    stats: {
+      order: 0,
+      mech: 0,
+      divine: 0,
+      rational: 100,
+      violence: 0,
+      evolution: 0,
+      creation: 0,
+      reality: -100,
+      might: 0,
+      spread: 0
+    }
+  },
+  {
+    name: "Mystical Materialist",
+    description: `
+      All of your practicies are bounded to the material world — you're not like spiritual sharlatans. 
+      But you also see and know way more than cold calculators or computers. 
+      This world is filled with symbols for you, which can be studied with methods scientists don't recognise.
+      And you explore the deepest depths or subconsiousness, freeing it from limited rational thinking.  
+    `,
+    stats: {
+      order: 0,
+      mech: 0,
+      divine: 0,
+      rational: -100,
+      violence: 0,
+      evolution: 0,
+      creation: 0,
+      reality: 100,
+      might: 0,
+      spread: 0
+    }
   }
 ];
