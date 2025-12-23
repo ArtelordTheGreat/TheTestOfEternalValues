@@ -712,5 +712,47 @@ const archetypes = [
       might: 0,
       spread: 0
     }
+  },
+  {
+    name: "Static Iconoclast",
+    description: `
+      You are essentially an engineer who has fallen out of love with humanity. 
+      You likely prefer the predictability of a gear or an algorithm over the unpredictability of human emotion. 
+      You will burn down the forest to protect the ancient stone temple at its center, 
+      because the temple is a masterpiece of engineering, while the forest is a messy accident of evolution.  
+    `,
+    stats: {
+      order: -40,
+      mech: 100,
+      divine: -40,
+      rational: 65,
+      violence: 0,
+      evolution: -75,
+      creation: -40,
+      reality: 50,
+      might: -100,
+      spread: -40
+    }
+  },
+  {
+    name: "Dystopian Dictator",
+    description: `
+      You are a terror from 1984 brought to life, putting down everything for your static and rigid law. 
+      You show mercy neither to your enemies nor to your allies, others are forced to live in fear under your rule. 
+      Everyone is kept in the line with an iron hand, no freedom is allowed so that they won't overthrow you.
+      You command soldiers and engineers in destroying and creating, until there is nothing but the structure.  
+    `,
+    stats: {
+      order: 100,
+      mech: 10,
+      divine: -10,
+      rational: 0,
+      violence: 100,
+      evolution: -100,
+      creation: 0,
+      reality: 0,
+      might: 20,
+      spread: 25
+    }
   }
 ];
