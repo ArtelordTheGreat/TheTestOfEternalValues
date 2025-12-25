@@ -754,5 +754,68 @@ const archetypes = [
       might: 20,
       spread: 25
     }
+  },
+  {
+    name: "Preserver of the Fever Dream",
+    description: `
+      You believe that the harsh, cold "Truth" of reality is a burden humanity was never meant to bear. 
+      While you possess the physical power to crush any foe, you choose to use that strength to shield a dying world within a beautiful, artificial Delirium. 
+      You are considered heretical because you reject the "natural order" of progression, preferring to freeze time in a perfect, merciful lie. 
+      You do not seek to convert others; you only seek to Preserve the sanctuary they have built for those already inside.
+    `,
+    stats: {
+      order: 100,
+      mech: 30,
+      divine: -60,
+      rational: 85,
+      violence: -85,
+      evolution: -50,
+      creation: 10,
+      reality: -60,
+      might: 85,
+      spread: -60
+    }
+  },
+  {
+    name: "Clockwork Mystic",
+    description: `
+      A master of the tangible and the intangible. You view the universe as a grand, divine machine that can be improved through Mechanism and Order. 
+      You are obsessed with the "Ghost in the Machine," seeking the Esoteric soul behind every piston and gear. 
+      Your work is often seen as a violation of the sacred, as you blend forbidden technologies with occult rituals to create "perfect" systems. 
+      You don't just build machines; you build deities out of brass and logic. 
+    `,
+    stats: {
+      order: 85,
+      mech: 85,
+      divine: -85,
+      rational: -60,
+      violence: 0,
+      evolution: 25,
+      creation: 40,
+      reality: -20,
+      might: 30,
+      spread: 0
+    }
+  },
+  {
+    name: "Wild Apostle of the Bloom",
+    description: `
+      A paradox of violent kindness. Your figure embodies the Chaotic and unpredictable growth of Nature. 
+      You believe that the greatest Mercy is to liberate the mind from the shackles of sanity, Spreading a psychic or biological Delirium that connects all living things. 
+      You wield raw, primordial energy to break down the walls of civilization, viewing the return to a "dreaming wilderness" as the ultimate evolution. 
+      You do not conquer to rule; you conquer to set the world "wild" again. 
+    `,
+    stats: {
+      order: -85,
+      mech: -60,
+      divine: 0,
+      rational: -85,
+      violence: -85,
+      evolution: 50,
+      creation: -40,
+      reality: -85,
+      might: 85,
+      spread: 85
+    }
   }
 ];
