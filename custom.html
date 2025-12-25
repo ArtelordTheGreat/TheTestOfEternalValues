@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Making Custom Results</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png">
+  <style>
+        /* Sandbox specific styling to match your existing theme */
+        .sandbox-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .slider-group {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #eee;
+            border-radius: 20px;
+        }
+        input[type=range] {
+            width: 80%;
+            height: 15px;
+            cursor: pointer;
+        }
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            padding: 0 10%;
+            margin-bottom: 10px;
+        }
+        .value-display {
+            font-size: 1.2em;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+  <h1>Sandbox Mode</h1>
+    <p>Manually adjust the axes to see specific results.</p>
+    <hr>
+    <div id="sliders-container" class="sandbox-container">
+        </div>
+    <div class="sandbox-container">
+        <button class="button" onclick="goToResults()" style="background-color: #2196f3;">View Results</button>
+        <button class="button" onclick="location.href='index.html'" style="background-color: #f44336;">Back</button>
+    </div>
+    <script>
+        // Define your 10 axis keys as they appear in results.js
+        const axisNames = ["order", "mech", "divine", "rational", "violence", "evolution", "creation", "reality", "might", "spread"];
+        const axes = [
+            { id: 'order', name: 'order' },
+            { id: 'mech', name: 'mechanism' },
+            { id: 'divine', name: 'divine' },
+            { id: 'rational', name: 'rational' },
+            { id: 'violence', name: 'violence' },
+            { id: 'evolution', name: 'evolution' },
+            { id: 'creation', name: 'creation' },
+            { id: 'reality', name: 'reality' },
+            { id: 'might', name: 'might' },
+            { id: 'spread', name: 'spread' }
+        ];
+
+        const container = document.getElementById('sliders-container');
+
+        // Create HTML for each slider
+        axes.forEach(axis => {
+            container.innerHTML += `
+                <div class="slider-group">
+                    <div class="slider-labels">
+                        <span>${axis.name}</span>
+                        <span class="value-display" id="val-${axis.id}">50%</span>
+                    </div>
+                    <input type="range" id="input-${axis.id}" min="0" max="100" value="50" 
+                           oninput="document.getElementById('val-${axis.id}').innerText = this.value + '%'">
+                </div>
+            `;
+        });
+
+        function goToResults() {
+            // Build the URL parameters string
+            let scores = {};
+            for (let name of axisNames){
+              scores[name] = document.getElementById('input-' + name).value;
+            }
+            let scores = axes.map(axis => {
+                let val = document.getElementById('input-' + axis.id).value;
+                return `${axis.id}=${val}`;
+            }).join('&');
+
+            // Redirect to your existing results.html
+            localStorage.setItem("epicScores", JSON.stringify(scores));
+            window.location.href = "results.html";
+        }
+    </script>
+</body>
+</html>
