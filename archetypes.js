@@ -443,10 +443,10 @@ const archetypes = [
   {
     name: "Recluse Scholar",
     description: `
-      Annoyed by the noise of cities and the everyday society, or for any other reason,  
-      you spend your days alone with your researches that would help science.  
-      You carefylly study nature and machines in your laboratories.  
-      Around you there are many papers with formulas and essays, forming a haven.
+      Irritated by the noise of cities and everyday life, or for some other reason,  
+      you spend your days alone, pursuing research that could advance science.  
+      You carefully study nature and mechanisms in your laboratories.  
+      Around you, a multitude of papers with formulas and essays forms a kind of refuge.
     `,
     stats: {
       order: -25,
