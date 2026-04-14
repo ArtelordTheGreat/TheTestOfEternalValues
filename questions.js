@@ -4,7 +4,7 @@ let questions = [
     effect: { order: 5 } //order
   },
   {
-    question: "Only through iron discipline we will be able to overcome what is ahead of us.",
+    question: "Iron discipline will allow us to overcome what is ahead of us.",
     effect: { order: 5 }
   },
   {
@@ -16,15 +16,15 @@ let questions = [
     effect: { order: 5 }
   },
   {
-    question: "Limitation of personal impulses is necessary for us to stay organised.",
+    question: "Laws are necessary for society to function..",
     effect: { order: 5 }
   },
   {
-    question: "Society built on chaos, free-formed and wild, better reflects the true nature of reality than any carved statute.",
+    question: "Society that is free-formed and wild, better reflects the true nature of reality than any carved statute.",
     effect: { order: -5 } //chaos
   },
   {
-    question: "The only way to be free and happy is to disobey rules that others made and you don't like.",
+    question: "Rules should be followed only if they align with personal values.",
     effect: { order: -5 }
   },
   {
@@ -32,11 +32,11 @@ let questions = [
     effect: { order: -5 }
   },
   {
-    question: "Satisfy your own ego no matter if that harms the structure around you or not.",
+    question: "Personal freedom should not be limited by artificial structures.",
     effect: { order: -5 }
   },
   {
-    question: "Social and legal pyramids that restrict us must be abolished to free inner avarity.",
+    question: "Social and legal pyramids that restrict us must be abolished.",
     effect: { order: -5 }
   },
   {
@@ -48,7 +48,7 @@ let questions = [
     effect: { mech: 5 }
   },
   {
-    question: "Gears, pistons and metal contraptions are the highest expression of progress; nature is overrated sentimental fluff.",
+    question: "Gears, pistons and metal contraptions are the highest expression of progress; nature is often romanticized and limits human progress.",
     effect: { mech: 5 }
   },
   {
@@ -112,7 +112,7 @@ let questions = [
     effect: { divine: -5 }
   },
   {
-    question: "Satan is the first freethinker and the emancipator of worlds.",
+    question: "Figures cast as ‘rebels’ or ‘fallen’ often represent necessary challengers to authority.",
     effect: { divine: -5 }
   },
   {
@@ -120,11 +120,11 @@ let questions = [
     effect: { divine: -5 }
   },
   {
-    question: "Science can explain anything in the world if given enough time.",
+    question: "In principle, science can explain most phenomena given enough time.",
     effect: { rational: 5 } //rational
   },
   {
-    question: "A statement is true only if proved by logic and evidence.",
+    question: "A statement is true if proved by logic and evidence, not supported by intuition.",
     effect: { rational: 5 }
   },
   {
@@ -132,11 +132,11 @@ let questions = [
     effect: { rational: 5 }
   },
   {
-    question: "Emotions can drive us off and misinform, a rational mind is correct.",
+    question: "Emotions can drive us off and misinform, a rational mind is more often correct.",
     effect: { rational: 5 }
   },
   {
-    question: "Pure logic, mathematics and reason are the only trustworthy guides; all mystic babble is foolishness.",
+    question: "Pure logic, mathematics and reason are the most reliable guides; all mystic babble is foolishness.",
     effect: { rational: 5 }
   },
   {
@@ -160,11 +160,11 @@ let questions = [
     effect: { rational: -5 }
   },
   {
-    question: "You won't win the war if you hold onto non-violence.",
+    question: "You won't win if you hold onto non-violence.",
     effect: { violence: 5 } //violence
   },
   {
-    question: "Strength and ruthlessness are necessary to carve order from chaos.",
+    question: "Force and ruthlessness can be justified and used for greater goals.",
     effect: { violence: 5 }
   },
   {
@@ -172,11 +172,11 @@ let questions = [
     effect: { violence: 5 }
   },
   {
-    question: "To bring a major change to this universe or protect the good, blood must be spilled.",
+    question: "Major change often requires force or confrontation.",
     effect: { violence: 5 }
   },
   {
-    question: "Mercy is a chain — sometimes the chain must break to let the mighty walk free.",
+    question: "Mercy is a chain — it often restricts from making preferable choices.",
     effect: { violence: 5 }
   },
   {
@@ -212,7 +212,7 @@ let questions = [
     effect: { evolution: 5 }
   },
   {
-    question: "The only way to escape decay is to continue the endless evolution.",
+    question: "Traditions should adapt to changing circumstances rather than remain fixed.",
     effect: { evolution: 5 }
   },
   {
@@ -256,19 +256,19 @@ let questions = [
     effect: { creation: 5 }
   },
   {
-    question: "To create from nothing is sacred; to tear down what stands is only for those without visio.",
+    question: "To create from nothing is sacred; to tear down what stands is only for those without vision.",
     effect: { creation: 5 }
   },
   {
-    question: "In order to achieve anything, the surrent state of things must be abolished.",
+    question: "In order to achieve goals, the current state of things must be abolished.",
     effect: { creation: -5 } //erosion
   },
   {
-    question: "Destruction leads the way, the burning fire illuminates it.",
+    question: "Destruction is the main tool of making a path to greater change, the burning fire illuminates it.",
     effect: { creation: -5 }
   },
   {
-    question: "You cannot make this world better unless you destroy its foundation that spreads the evil.",
+    question: "Constuction alone will not improve the world — the foundation of what exists should be destroyed.",
     effect: { creation: -5 }
   },
   {
@@ -276,7 +276,7 @@ let questions = [
     effect: { creation: -5 }
   },
   {
-    question: "Being very destructive is a fine part of our nature.",
+    question: "Destruction is sometimes necessary to remove harmful systems.",
     effect: { creation: -5 }
   },
   {
@@ -300,15 +300,15 @@ let questions = [
     effect: { reality: 5 }
   },
   {
-    question: "Dreams are as real as the material world and they can affect it.",
+    question: "Dreams and subjective experiences can hold truths beyond physical reality.",
     effect: { reality: -5 } //delirium
   },
   {
-    question: "Life isn't limited to physics, we can encounter anomalies and magic.",
+    question: "Besides explained material phenomenons we can encounter anomalies and magic.",
     effect: { reality: -5 }
   },
   {
-    question: "It is possible to go beyond physical limits.",
+    question: "It is possible to go beyond current physical limits.",
     effect: { reality: -5 }
   },
   {
@@ -320,15 +320,15 @@ let questions = [
     effect: { reality: -5 }
   },
   {
-    question: "Might makes right.",
+    question: "Using force and strength is preferable to intrigues and manipulations.",
     effect: { might: 5 } //might
   },
   {
-    question: "The world is shaped by those who are the strongest.",
+    question: "The world is shaped by those who have arms and weapons, not books or papers.",
     effect: { might: 5 }
   },
   {
-    question: "If you have strength, you don't need intelligence.",
+    question: "Decisive strength is often more effective than overthinking.",
     effect: { might: 5 }
   },
   {
@@ -336,7 +336,7 @@ let questions = [
     effect: { might: 5 }
   },
   {
-    question: "Fighters and warriors are most honorable roles, better than civilians.",
+    question: "Soldiers and warriors are more important than intellectuals.",
     effect: { might: 5 }
   },
   {
@@ -348,7 +348,7 @@ let questions = [
     effect: { might: -5 }
   },
   {
-    question: "If you know how the world is structured, than you can make big changes even with little effort.",
+    question: "If you know how the world is structured, then you can make big changes even with little effort.",
     effect: { might: -5 }
   },
   {
@@ -364,19 +364,19 @@ let questions = [
     effect: { spread: 5 } //spread
   },
   {
-    question: "We must care of citizens abroad as much as of our own.",
+    question: "We must care about humans abroad as much as of our own.",
     effect: { spread: 5 }
   },
   {
-    question: "Interventions in other countries are justified even if they have high costs.",
+    question: "Intervention beyond one’s borders can be justified to defend values or stability.",
     effect: { spread: 5 }
   },
   {
-    question: "We must fight for our values across the entire world, not just our home.",
+    question: "We must fight for our values across the entire world, not just our homeland.",
     effect: { spread: 5 }
   },
   {
-    question: "We can rest only once we have spread our ideas across all civilizations.",
+    question: "When given a chance, we should promote our ideas and insist others on taking them.",
     effect: { spread: 5 }
   },
   {
@@ -388,7 +388,7 @@ let questions = [
     effect: { spread: -5 }
   },
   {
-    question: "If there is too much injustice around your home, just build walls to not see it.",
+    question: "Internal stability should take priority over external problems.",
     effect: { spread: -5 }
   },
   {
