@@ -16,7 +16,7 @@ let questions = [
     effect: { order: 5 }
   },
   {
-    question: "Laws are necessary for society to function..",
+    question: "Laws are necessary for society to function.",
     effect: { order: 5 }
   },
   {
@@ -344,7 +344,7 @@ let questions = [
     effect: { might: -5 } //intellect
   },
   {
-    question: "Knowledge is power.",
+    question: "If you want more power, you need more knowledge and information.",
     effect: { might: -5 }
   },
   {
