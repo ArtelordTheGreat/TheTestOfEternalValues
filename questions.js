@@ -268,7 +268,7 @@ let questions = [
     effect: { creation: -5 }
   },
   {
-    question: "Constuction alone will not improve the world — the foundation of what exists should be destroyed.",
+    question: "Construction alone will not improve the world — the foundation of what exists should be destroyed.",
     effect: { creation: -5 }
   },
   {
