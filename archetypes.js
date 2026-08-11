@@ -577,7 +577,7 @@ const archetypes = [
     stats: {
       order: 0,
       mech: 0,
-      divine: -80,
+      divine: 70,
       rational: -45,
       violence: -10,
       evolution: 100,
@@ -714,7 +714,7 @@ const archetypes = [
     }
   },
   {
-    name: "Static Iconoclast",
+    name: "Mechanics Iconoclast",
     description: `
       You are essentially an engineer who has fallen out of love with humanity. 
       You likely prefer the predictability of a gear or an algorithm over the unpredictability of human emotion. 
@@ -730,7 +730,7 @@ const archetypes = [
       evolution: -75,
       creation: -40,
       reality: 50,
-      might: -100,
+      might: -85,
       spread: -40
     }
   },
@@ -816,6 +816,195 @@ const archetypes = [
       reality: -85,
       might: 85,
       spread: 85
+    }
+  },
+  {
+    name: "Moderate Loyalist",
+    description: `
+      You see that structures have a good reason to exist and usually remain loyal them.  
+      Though hierarchies can vary, some are better than others and they're not sacred,  
+      following rules of the surrounding system is within your habits.  
+      Other than that, you're quite balanced and either not distracted or just undecided.
+    `,
+    stats: {
+      order: 30,
+      mech: 0,
+      divine: 10,
+      rational: 0,
+      violence: 0,
+      evolution: -10,
+      creation: 0,
+      reality: 10,
+      might: 0,
+      spread: 0
+    }
+  },
+  {
+    name: "Moderate Rebel",
+    description: `
+      You are more often seen mocking hierarchies, rather than supporting them.  
+      Though you aknowledge that some rules can be useful, 
+      adding too many of them is likely to cause issues and limit people's lives too much.  
+      Other than that, you're balanced and either not distracted or just undecided.
+    `,
+    stats: {
+      order: -30,
+      mech: 0,
+      divine: -10,
+      rational: 0,
+      violence: 10,
+      evolution: 10,
+      creation: -10,
+      reality: 0,
+      might: 0,
+      spread: 0
+    }
+  },
+  {
+    name: "Moderate Engineer",
+    description: `
+      When roads cut through fields of grass, you don't moarn but aknowledge efficiency.  
+      Though you are able to doubt and question purposes of machines,  
+      supporting their advancement and new technologies is within your habits.  
+      Other than that, you're balanced and either not distracted or just undecided.
+    `,
+    stats: {
+      order: 10,
+      mech: 30,
+      divine: 0,
+      rational: 10,
+      violence: 0,
+      evolution: 0,
+      creation: 10,
+      reality: 10,
+      might: -10,
+      spread: 0
+    }
+  },
+  {
+    name: "Moderate Ecologist",
+    description: `
+      You can be found listening to the sound of wind in forests or enjoying flowers.  
+      Though admitting how some technologies are needed for human survival,  
+      usually keeping green wildlife untouched is the preferred option.  
+      Other than that, you're balanced and either not distracted or just undecided.
+    `,
+    stats: {
+      order: 0,
+      mech: -30,
+      divine: 0,
+      rational: 0,
+      violence: -10,
+      evolution: -10,
+      creation: 0,
+      reality: 10,
+      might: 0,
+      spread: 0
+    }
+  },
+  {
+    name: "Metal Anarchist",
+    description: `
+      You combine rotating gears with the philosophy of liberty and freedom.  
+      To you, entropy is not an obstacle for technologies but a space for freestyling.  
+      Mechanisms form the engine of liberation and function without rigid structures.  
+      Your anarchy is born in robot scrapyards and set in motion by machines.
+    `,
+    stats: {
+      order: -80,
+      mech: 80,
+      divine: -40,
+      rational: 0,
+      violence: 40,
+      evolution: 0,
+      creation: -20,
+      reality: 10,
+      might: 0,
+      spread: 0
+    }
+  },
+  {
+    name: "Cunning Demon",
+    description: `
+      You harvest your power not in force or muscles, but in strategies and tricksteries.  
+      You find beauty in playing four-dimensional chess,  
+      while fooling all of those who claim to be divine or messengers of such.  
+      You value thoughtful plans without morals and minds that dare to be unholy.
+    `,
+    stats: {
+      order: -30,
+      mech: 0,
+      divine: -90,
+      rational: 70,
+      violence: 0,
+      evolution: 10,
+      creation: 0,
+      reality: -20,
+      might: -90,
+      spread: 0
+    }
+  },
+  {
+    name: "Spirit-Guided Iconoclast",
+    description: `
+      Both churches and academies fail to see the true force that is showing you the path.  
+      Navigating through the irrational with intuition,  
+      you're ready to shatter worshipped icons to clean the path or show a different truth.  
+      Spirits and spectres hover between calculators and dogmas, offering a better life.
+    `,
+    stats: {
+      order: -50,
+      mech: 0,
+      divine: -85,
+      rational: -85,
+      violence: 20,
+      evolution: 0,
+      creation: -30,
+      reality: -85,
+      might: 0,
+      spread: 0
+    }
+  },
+  {
+    name: "Grand Inquisitor of Preservation",
+    description: `
+      This title combines the traditional search for heresy with the resistence to any form of change. 
+      You hold zealot-like loyalty to everlasting traditions. 
+      You preserve all vestiges of the present to the point of rejecting most innovations. 
+      You ensure the life stays as a constant and the state of being always remains predictable.    
+    `,
+    stats: {
+      order: 40,
+      mech: 0,
+      divine: 90,
+      rational: -45,
+      violence: -10,
+      evolution: -100,
+      creation: -50,
+      reality: -70,
+      might: 0,
+      spread: -100
+    }
+  },
+  {
+    name: "Unholy Founder of Nextness",
+    description: `
+      A title that shows the will to constantly push for radical change, breaking holy dogmas in the process. 
+      You hold zealot-like loyalty to whatever hasn't happened yet. 
+      You preserve the future by actively destroying any vestige of the present. 
+      You ensure the only constant is the frenzied, delirious sprint toward the next, yet-to-be-defined state of being.    
+    `,
+    stats: {
+      order: 0,
+      mech: 0,
+      divine: -100,
+      rational: -45,
+      violence: -10,
+      evolution: -100,
+      creation: -60,
+      reality: -80,
+      might: 0,
+      spread: -100
     }
   }
 ];
