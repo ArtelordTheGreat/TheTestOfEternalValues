@@ -323,12 +323,12 @@ const archetypes = [
       You're a herald of dark times: souls will become dark, the Sun will go glimmer, and space itself will twist.
     `,
     stats: {
-      order: -50,
-      mech: -10,
+      order: -75,
+      mech: -20,
       divine: -100,
       rational: -100,
       violence: 35,
-      evolution: 80,
+      evolution: 75,
       creation: -10,
       reality: -50,
       might: 30,
@@ -1005,6 +1005,69 @@ const archetypes = [
       reality: -80,
       might: 0,
       spread: -100
+    }
+  },
+  {
+    name: "Gloomy Heathen",
+    description: `
+      You are one of those who prefer the darkness of cults over the light of churches or academies. 
+      You greet what others label as "corruption" because it is the truth or the source of freedom. 
+      Beneath the surface of modern lies something deeper, darker and more primal, waiting to be awaken. 
+      Through your deeds the irrational will spread into this world.
+    `,
+    stats: {
+      order: -40,
+      mech: -10,
+      divine: -75,
+      rational: -75,
+      violence: 30,
+      evolution: 60,
+      creation: -10,
+      reality: -40,
+      might: 25,
+      spread: 75
+    }
+  },
+  {
+    name: "Crimson Prince",
+    description: `
+      This title is sometimes given to successors or followers of the Scarlet King. 
+      Your hands crave a path for mankind that will bring it to its ancient primal roots. 
+      You smile when anomalies break logic and chaotic events break people's minds. 
+      What was long lost and forgotten is now being reawakened.
+    `,
+    stats: {
+      order: -75,
+      mech: -40,
+      divine: -75,
+      rational: -75,
+      violence: 75,
+      evolution: -40,
+      creation: -75,
+      reality: -30,
+      might: 40,
+      spread: 60
+    }
+  },
+  {
+    name: "Reserve Archdruid",
+    description: `
+      You're a zealot of everything green, known for protecting plants and animals.  
+      The best and favourite job is overwatching wildlife to know that it's safe under your control.  
+      And to keep the ecosystem sustained, some discipline and rigid structure is required around it.  
+      Your reserve of floura and fauna is stable and free from machines.
+    `,
+    stats: {
+      order: 80,
+      mech: -100,
+      divine: 40,
+      rational: -40,
+      violence: 0,
+      evolution: -50,
+      creation: 0,
+      reality: 0,
+      might: 0,
+      spread: -70
     }
   }
 ];
