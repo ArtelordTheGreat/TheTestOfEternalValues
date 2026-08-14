@@ -52,7 +52,7 @@ const archetypes = [
     stats: {
       order: -50,
       mech: 85,
-      divine: -75,
+      divine: -80,
       rational: 70,
       violence: 0,
       evolution: 50,
@@ -136,12 +136,12 @@ const archetypes = [
     stats: {
       order: 90,
       mech: 100,
-      divine: 20,
-      rational: 30,
+      divine: 80,
+      rational: 20,
       violence: 60,
       evolution: -90,
       creation: 50,
-      reality: 0,
+      reality: -40,
       might: -80,
       spread: 75
     }
@@ -488,11 +488,11 @@ const archetypes = [
       You apply cold logic to the natural, primal world, free from moralist illusions.   
       You understand that destruction is an important, if not necessary, step for preservation.
       Animals are not wrong — they are just who they are, and the world rewards the fittest.
-      And it's not a thing that can, or needs to be, radically changed.
+      It's not a thing that can, or needs to be, radically changed.
     `,
     stats: {
       order: -20,
-      mech: -85,
+      mech: -50,
       divine: 0,
       rational: 85,
       violence: 45,
@@ -807,7 +807,7 @@ const archetypes = [
     `,
     stats: {
       order: -85,
-      mech: -60,
+      mech: -85,
       divine: 0,
       rational: -85,
       violence: -85,
@@ -987,7 +987,7 @@ const archetypes = [
     }
   },
   {
-    name: "Unholy Founder of Nextness",
+    name: "Unholy Warrior of Nextness",
     description: `
       A title that shows the will to constantly push for radical change, breaking holy dogmas in the process. 
       You hold zealot-like loyalty to whatever hasn't happened yet. 
@@ -1069,5 +1069,46 @@ const archetypes = [
       might: 0,
       spread: -70
     }
-  }
+  },
+  {
+    name: "Knight of Light",
+    description: `
+      You are a determined warrior of light, pious and disciplined.  
+      With unwavering conviction, you cleanse the cosmos of filth and chaos,  
+      fighting for justice and stability of this world.  
+      Your sword is as sacred as your oath, and you bear the burden of holiness with dignity.
+    `,
+    stats: {
+      order: 45,
+      mech: 30,
+      divine: 75,
+      rational: 0,
+      violence: 75,
+      evolution: -15,
+      creation: -50,
+      reality: 5,
+      might: 50,
+      spread: 75
+    }
+  },
+  {
+    name: "Priest of Mother Nature",
+    description: `
+      You remember that you are a child of Mother Nature, and her gifts remain holy.  
+      You see the world filled with green flowers as blessed and living in harmony,
+      while a world that cut down its trees will eventually bring itself to collapse.  
+      You find something holy in everything natural, enjoying views untouched by man.
+    `,
+    stats: {
+      order: 0,
+      mech: -100,
+      divine: 100,
+      rational: -40,
+      violence: 0,
+      evolution: -20,
+      creation: 0,
+      reality: -40,
+      might: 0,
+      spread: -40
+    }
 ];
