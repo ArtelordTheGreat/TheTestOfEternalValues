@@ -1111,4 +1111,5 @@ const archetypes = [
       might: 0,
       spread: -40
     }
+  }
 ];
